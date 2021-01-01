@@ -1,0 +1,17 @@
+.skill-content {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.skill-name {
+    color: var(--theme-gray);
+    width: 25%;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.stars {
+    font-size: 40px;
+}

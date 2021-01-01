@@ -1,0 +1,11 @@
+export const name = "Visual Function Testing";
+
+export const longText = "As part of my research at UC Irvine in the Department of Ophthalmology, I developed a more comfortable and objective visual function test. Getting one’s eyes examined at the optometrist’s office can often be inconvenient because of people’s busy schedules. Time is lost scheduling eye exams, traveling to the doctor, sitting in waiting room, and going to follow-up appointments. Additionally, the process of eye examinations can be uncomfortable. Cumbersome tests, obtrusive equipment, and discrepancies in test results and diagnoses arising from differences in clinical technicians make visual function testing significantly variable and biased. Overall, the current eye examination process is too inefficient and subjective. The goal of this project was to create a more convenient and objective way to measure vision in the clinic, and even in the comfort of one's home without interacting with another human. We used Pupil Labs, an eye tracking device, and computerized simulations to objectively measure one’s contrast sensitivity and visual acuity by monitoring one’s responses to stimuli prompts through the movement of their pupils. The Pupil Labs tracks the location of the user’s gaze on the screen and determines whether they have correctly identified the stimulus. Using adaptive algorithms, the simulation progressively varies in difficulty according to the accuracy of the user’s previous responses to find the optimal vision level. Overall, this project was a great learning experience. It was my first time performing research and utilizing external hardware in a software application. I also got to work with some amazing people.";
+
+export const shortText = "As part of my research at UC Irvine in the Department of Ophthalmology, I developed a more comfortable and objective visual function test....";
+
+export const dates = "Spring/Summer 2020";
+
+export const techUsed = "Python, Pupil Labs eye-tracking hardware";
+
+export const link = ""

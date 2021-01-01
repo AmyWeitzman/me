@@ -1,0 +1,24 @@
+#nav-bar {
+    color: var(--theme-gray);
+    margin: 1% 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    padding-bottom: 10px;
+    color: var(--theme-gray);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--theme-purple);
+    cursor: pointer;
+}
+
+.cur-link {
+    border-bottom: 2px solid var(--theme-purple);
+}

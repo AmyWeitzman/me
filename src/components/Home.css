@@ -1,0 +1,43 @@
+.home-content {
+    margin: 20px 20%;
+    text-align: left;
+}
+
+#terminal {
+    background-color: black;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+#hello-world {
+    color: var(--theme-purple);
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #d3d2d483;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.terminal-text {
+    color: var(--theme-green);
+    font-size: 1.5rem;
+    font-family: monospace;
+    margin-left: 20px;
+}
+
+#terminal-response {
+    white-space: pre-wrap;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.visible {
+    color: var(--theme-green);
+}
+

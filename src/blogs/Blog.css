@@ -1,0 +1,49 @@
+
+p { 
+    font-size: 25px;
+    padding-left: 20px;
+    color: #d3d2d4;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin: 2px;
+    color: #d3d2d4;
+}
+
+.container {
+    background-color: black;
+    color: black;
+    box-shadow: 0px 1px 10px -1px #d3d2d4;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+}
+
+.works-cited {
+    text-align: center;
+    text-indent: 0;
+}
+
+.reference {
+    text-indent: -40px;
+    padding-left: 50px;
+}
+
+a {
+    color: #2197ff;
+    text-decoration: underline;
+}
+
+.img {
+    padding: 10px;
+    text-align: center;
+}
+
+.img-caption {
+    font-size: 20px;
+    color: gray;
+}

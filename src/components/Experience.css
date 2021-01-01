@@ -1,0 +1,62 @@
+.experience-container {
+    color: var(--theme-gray);
+    text-align: left;
+    padding-left: 10px;
+    display: inline;
+}
+
+.company-logo {
+    width: 12%;
+    min-width: 100px;
+    justify-self: start;
+    float: left;
+    margin-top: 20px;
+}
+
+.experience-info-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1px;
+}
+
+.experience-info-item {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-years-row {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.job-title {
+    font-weight: bold;
+    justify-self: start;
+}
+
+.location {
+    font-style: italic;
+}
+
+.task-list {
+    margin-top: 0;
+}
+
+.task {
+    margin-left: 20px;
+}
+
+.years {
+    justify-self: end;
+    font-style: italic;
+}
+
+.skill-list {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+

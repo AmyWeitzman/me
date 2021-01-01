@@ -1,0 +1,35 @@
+.edu-container {
+    color: var(--theme-gray);
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+}
+
+.school-logo {
+    width: 12%;
+    min-width: 100px;
+    justify-self: start;
+}
+
+.edu-info-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1px;
+    height: 5px;
+}
+
+.edu-info-item {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.school-name {
+    font-weight: bold;
+}
+
+.grad-year {
+    font-style: italic;
+}
+

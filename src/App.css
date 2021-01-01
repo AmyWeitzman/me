@@ -1,0 +1,108 @@
+/* global variables */
+:root {
+    --theme-purple: #9034c7;
+    --theme-green: #39ff14;
+    --theme-gray: #d3d2d4;
+    --theme-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    background-color: black;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: var(--theme-font);
+}
+
+.box-shadow {
+    box-shadow: 0px 1px 10px -1px #d3d2d4;
+}
+
+.rotate-y:hover {
+    transition        : 1.5s ease all;
+	-moz-transition   : 1.5s ease all;
+    -webkit-transition: 1.5s ease all;
+    transform               : rotateY(360deg);
+	-moz-transform          : rotateY(360deg);
+	-webkit-transform       : rotateY(360deg);
+	transform-origin        : center;
+	-moz-transform-origin   : center;
+	-webkit-transform-origin: center;
+}
+
+.github-icon {
+    color: #d3d2d4;
+    margin-left: 15px;
+    font-size: 50px;
+}
+
+.github-icon-link {
+    color: #d3d2d4 !important;
+}
+
+.github-icon-light {
+    text-shadow: none;
+    border-radius: 80px;
+}
+
+#github-icon:hover {
+    color: #9034c7;
+}
+
+.dark-fg-light-red {
+    color: rgba(192, 11, 11, 0.8);
+}
+
+.dark-border-light-red {
+    border: 2px solid rgba(192, 11, 11, 0.5); 
+}
+
+.bg-light-red {
+    background-color: rgb(224, 152, 152);
+}
+
+.orange {
+    color: rgba(189, 103, 6, 0.8);
+}
+
+.bg-light-orange {
+    background-color: rgb(207, 173, 127);
+}
+
+.border-orange {
+    border: 2px solid rgba(189, 103, 6, 0.5); 
+}
+
+.green {
+    color: rgba(25, 102, 9, 0.8);
+}
+
+.bg-light-green {
+    background-color: rgb(125, 173, 129);
+}
+
+.border-green {
+    border: 2px solid rgba(25, 102, 9, 0.5); 
+}
+
+.blue {
+    color: rgba(9, 46, 102, 0.8);
+}
+
+.bg-light-blue {
+    background-color: rgb(122, 143, 189);
+}
+
+.border-blue {
+    border: 2px solid rgba(9, 46, 102, 0.5); 
+}
+
+.purple {
+    color: rgba(62, 8, 83, 0.8);
+}
+
+.bg-light-purple {
+    background-color: #cdabe0;
+}
+
+.border-purple {
+    border: 2px solid rgba(62, 8, 83, 0.5); 
+}
