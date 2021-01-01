@@ -61,3 +61,26 @@
 .hover-grow:hover {
     transform: scale(1.1);
 }
+
+#skills-table-mobile {
+    display: none;
+}
+
+@media (max-width: 800px) { 
+    .resume-content {
+        margin: 20px 5%;
+        overflow: auto;
+    }
+
+    #skills-table {
+        display: none;
+    }
+
+    #skills-table-mobile {
+        display: block;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}

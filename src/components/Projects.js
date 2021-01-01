@@ -1,4 +1,3 @@
-import { faAutoprefixer } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
 import '../App.css';
 

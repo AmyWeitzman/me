@@ -15,3 +15,14 @@
 .stars {
     font-size: 40px;
 }
+
+@media (max-width: 800px) { 
+    .skill-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .skill-name {
+        margin-right: 50px;
+    }
+}

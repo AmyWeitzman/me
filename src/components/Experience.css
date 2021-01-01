@@ -58,5 +58,12 @@
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 40px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) { 
+    .title-years-row {
+        display: inline;
+    }
 }
 

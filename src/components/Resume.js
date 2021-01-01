@@ -121,6 +121,73 @@ const skillLevels = [
     }
 ];
 
+const skillLevelsMobile = [
+    {
+        skill: "Python",
+        level: 5
+    },
+    {
+        skill: 'Java',
+        level: 5
+    },
+    {
+        skill: 'HTML',
+        level: 5
+    },
+    {
+        skill: 'CSS',
+        level: 5
+    },
+    {
+        skill: 'JavaScript',
+        level: 4
+    },
+    {
+        skill: 'Vue.js',
+        level: 4
+    },
+    {
+        skill: 'React.js',
+        level: 4
+    },
+    {
+        skill: 'Git',
+        level: 4
+    },
+    {
+        skill: 'SQL',
+        level: 4
+    },
+    {
+        skill: 'Node.js',
+        level: 3
+    },
+    {
+        skill: 'Firebase',
+        level: 3
+    },
+    {
+        skill: 'PostgreSQL',
+        level: 3
+    },
+    {
+        skill: 'C++',
+        level: 3
+    },
+    {
+        skill: 'Figma',
+        level: 3
+    },
+    {
+        skill: 'MongoDB',
+        level: 1
+    },
+    {
+        skill: 'GraphQL',
+        level: 1
+    }
+];
+
 const awards = [
     {
         jobTitle: "Advancing Women in Technology Scholar",
@@ -183,6 +250,19 @@ function Resume() {
                             </tr>
                         );
                     })
+                }
+            </tbody>
+        </table>
+        <table id="skills-table-mobile">
+            <tbody>
+                {
+                    skillLevelsMobile.map((el, idx) => {
+                        return (
+                            <tr>
+                                <td><SkillLevel key={idx} skill={el.skill} level={el.level} /></td>
+                            </tr>
+                        );
+                    })  
                 }
             </tbody>
         </table>
