@@ -4,7 +4,7 @@ export const longText = "I grew up playing the Game of Life, but now that I'm ol
 
 export const shortText = "I grew up playing the Game of Life, but now that I'm older, I realize how unrealistic much of that game is so I decided to make a more realistic verison called Real Life.....";
 
-export const dates = "Spring/Summer 2020";
+export const dates = "2020";
 
 export const techUsed = "Python, Flask, HTML, CSS, JavaScript, Bootstrap, D3.js";
 

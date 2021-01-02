@@ -4,7 +4,7 @@ export const longText = "As part of my research at UC Irvine in the Department o
 
 export const shortText = "As part of my research at UC Irvine in the Department of Ophthalmology, I developed a more comfortable and objective visual function test....";
 
-export const dates = "Spring/Summer 2020";
+export const dates = "2020 - 2021";
 
 export const techUsed = "Python, Pupil Labs eye-tracking hardware";
 

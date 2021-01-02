@@ -11,7 +11,7 @@ function Blog8() {
         <div className="container">
             <h3 className="title">Unique Interview Questions</h3>
             <div className="img">
-                <img src={interviewq} alt="Thinking" width='300px'/> 
+                <img className="blog-image" src={interviewq} alt="Thinking" width='300px'/> 
             </div>
             <p><b>If I were an animal...</b>I would be a chameleon because I am adaptable and quirky.</p>
             <p><b>If I were a food...</b>I would be a fluffernutter because I am sweet and nutty.</p>

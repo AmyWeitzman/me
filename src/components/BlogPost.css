@@ -33,3 +33,12 @@
     text-decoration: underline;
 }
 
+@media (max-width: 800px) { 
+    .blog-post {
+        margin-bottom: 30px;
+    }
+
+    .blog-post:hover {
+        transform: none;
+    }
+}

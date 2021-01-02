@@ -13,7 +13,7 @@ function Blog5() {
       <div className="container">
       <h3 className="title">Breaking Tackles</h3>
       <div className="img">
-            <img src={football} alt="American Football" width='300px'/> 
+            <img className="blog-image" src={football} alt="American Football" width='300px'/> 
       </div>
       <p>TOUCHDOWN! Cheers shatter the silence as fans resume breathing.
 My face cringes as the savory aroma of barbecued wings and delectable
@@ -41,7 +41,7 @@ targets head on; I began to understand this complex yet thrilling pastime.
 As the players scrambled, as the points pasted the scoreboard, as the
 yellow flags dotted the grass, I strived to understand the football enigma.</p>
     <div className="img">
-        <img src={bama} alt="Alabama Crimson Tide logo" width='200px'/> 
+        <img className="blog-image" src={bama} alt="Alabama Crimson Tide logo" width='200px'/> 
     </div>
     <p>After hours of play, the game clock struck 00:00. With a 35-0 victory
 over the Big Red, Bama’s Crimson Tide added not only their second win of
@@ -62,7 +62,7 @@ back up. Football instilled in me the dedication and determination to always
 aim for improvement. Ninety-nine percent may be good, but it’s not good
 enough. I aim for that extra percent.</p>
     <div className="img">
-        <img src={football_quote} alt="Quote by Lewis Grizzard about football and life lessons" width='400px'/> 
+        <img className="blog-image" src={football_quote} alt="Quote by Lewis Grizzard about football and life lessons" width='400px'/> 
     </div>
     <p>My passion for football also prepared me for challenges, including
 taking AP classes and running for leadership positions. Now I venture out
