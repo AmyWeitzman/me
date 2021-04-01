@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.5aad93b1.chunk.css",
-    "main.js": "/me/static/js/main.ef9911e4.chunk.js",
-    "main.js.map": "/me/static/js/main.ef9911e4.chunk.js.map",
-    "runtime-main.js": "/me/static/js/runtime-main.58ca1f5a.js",
-    "runtime-main.js.map": "/me/static/js/runtime-main.58ca1f5a.js.map",
-    "static/js/2.dd164ba3.chunk.js": "/me/static/js/2.dd164ba3.chunk.js",
-    "static/js/2.dd164ba3.chunk.js.map": "/me/static/js/2.dd164ba3.chunk.js.map",
-    "static/js/3.13225090.chunk.js": "/me/static/js/3.13225090.chunk.js",
-    "static/js/3.13225090.chunk.js.map": "/me/static/js/3.13225090.chunk.js.map",
+    "main.css": "/me/static/css/main.6234e2ff.chunk.css",
+    "main.js": "/me/static/js/main.3bf1f0f4.chunk.js",
+    "main.js.map": "/me/static/js/main.3bf1f0f4.chunk.js.map",
+    "runtime-main.js": "/me/static/js/runtime-main.f4e49839.js",
+    "runtime-main.js.map": "/me/static/js/runtime-main.f4e49839.js.map",
+    "static/js/2.137374a0.chunk.js": "/me/static/js/2.137374a0.chunk.js",
+    "static/js/2.137374a0.chunk.js.map": "/me/static/js/2.137374a0.chunk.js.map",
+    "static/js/3.9d479bb4.chunk.js": "/me/static/js/3.9d479bb4.chunk.js",
+    "static/js/3.9d479bb4.chunk.js.map": "/me/static/js/3.9d479bb4.chunk.js.map",
     "index.html": "/me/index.html",
-    "static/css/main.5aad93b1.chunk.css.map": "/me/static/css/main.5aad93b1.chunk.css.map",
-    "static/js/2.dd164ba3.chunk.js.LICENSE.txt": "/me/static/js/2.dd164ba3.chunk.js.LICENSE.txt",
+    "static/css/main.6234e2ff.chunk.css.map": "/me/static/css/main.6234e2ff.chunk.css.map",
+    "static/js/2.137374a0.chunk.js.LICENSE.txt": "/me/static/js/2.137374a0.chunk.js.LICENSE.txt",
     "static/media/BANs1.4bc1fc7b.jpg": "/me/static/media/BANs1.4bc1fc7b.jpg",
     "static/media/BANs2.a46ccfc3.PNG": "/me/static/media/BANs2.a46ccfc3.PNG",
     "static/media/BANs3.1ceabe1d.PNG": "/me/static/media/BANs3.1ceabe1d.PNG",
@@ -30,6 +30,7 @@
     "static/media/dia_logo.9ec01c30.png": "/me/static/media/dia_logo.9ec01c30.png",
     "static/media/football.fcb5195b.png": "/me/static/media/football.fcb5195b.png",
     "static/media/football_quote.1d221433.jpg": "/me/static/media/football_quote.1d221433.jpg",
+    "static/media/hkp_logo.4774cf87.png": "/me/static/media/hkp_logo.4774cf87.png",
     "static/media/interviewq.25dabc80.jpg": "/me/static/media/interviewq.25dabc80.jpg",
     "static/media/personal_edu.339731de.png": "/me/static/media/personal_edu.339731de.png",
     "static/media/project_snapshot.3789857e.png": "/me/static/media/project_snapshot.3789857e.png",
@@ -48,9 +49,9 @@
     "static/media/zot.2096fbd4.png": "/me/static/media/zot.2096fbd4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.58ca1f5a.js",
-    "static/js/2.dd164ba3.chunk.js",
-    "static/css/main.5aad93b1.chunk.css",
-    "static/js/main.ef9911e4.chunk.js"
+    "static/js/runtime-main.f4e49839.js",
+    "static/js/2.137374a0.chunk.js",
+    "static/css/main.6234e2ff.chunk.css",
+    "static/js/main.3bf1f0f4.chunk.js"
   ]
 }
