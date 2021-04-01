@@ -8,6 +8,8 @@ import Experience from "./Experience";
 import SkillLevel from "./SkillLevel";
 
 import uci_logo from '../images/uci_logo.png';
+import behaivior_logo from '../images/behaivior_logo.png';
+import hkp_logo from '../images/hkp_logo.png';
 import propheto_logo from '../images/propheto_logo.png';
 import dia_logo from '../images/dia_logo.png';
 import siemens_logo from '../images/siemens_logo.png';
@@ -28,6 +30,39 @@ const schoolInfo = [
 ];
 
 const experienceInfo = [
+    {
+        jobTitle: "Software Development and Data Science Intern",
+        companyName: "Behaivior",
+        location: "Remote",
+        years: "Winter 2020—Present",
+        skills: ["React", "Redux", "TypeScript", "Firebase", "Figma", "Python", "ML", "Git", "Agile"],
+        tasks: [
+            "Streamline daily survey process by designing and implementing custom survey component using Figma, TypeScript, React.js, Redux, Firebase yielding 3x better response rate and improving data collection efficiency by 50%",
+            "Compose event-driven Firebase Cloud Function to automatically send email alerts to care provider when person-in-recovery indicates need for assistance, saving company 10 man-hours per week",
+            "Visualize real-time user health information collected from wearables using Victory charts library in React.js and Firebase to monitor potential onset of craving in 1 and 6 hour intervals",
+            "Clean dataset of 1.2 million time-series data points to standardize format and aggregate 8 features by time intervals",
+            "Streamline data aggregation process by performing incremental aggregation to improve performance by 360%",
+            "Train gradient boosted decision trees (XGBoost) classification model in Python to predict whether a person-in-recovery will be craving in the next 6 hours with 100% accuracy",
+            "Tune 7 model hyperparameters using 10-fold cross-validation to determine optimal parameters to maximize accuracy",
+            "Analyze confusion matrix and logistic loss graph to iteratively adjust model and improve prediction accuracy by 20%",
+            "Automate logging for model runs to keep track of model parameters and results for comparison and future replication",
+            "Present about XGBoost models to Senior Data Scientist and 5 interns to teach about boosting techniques, hyperparameter tuning, and metric analysis as well as receive feedback from peers to improve my XGBoost model performance"
+        ],
+        logo: behaivior_logo
+    },
+    {
+        jobTitle: "Front-End Developer Intern",
+        companyName: "HKP Solutions",
+        location: "Remote",
+        years: "Winter 2020—Present",
+        skills: ["HTML", "CSS", "React.js", "Redux", "Jest", "Git", "Agile"],
+        tasks: [
+            "Build 4 customer-oriented features to enhance company web application on team of 8 using React.js and Redux",
+            "Collaborate with back-end team to integrate back-end API into front-end application",
+            "Test Redux reducers and actions using Jest framework to ensure correctness of code and edge-case coverage"
+        ],
+        logo: hkp_logo
+    },
     {
         jobTitle: "Software Developer Intern",
         companyName: "Propheto",
@@ -85,12 +120,12 @@ const skillLevels = [
     },
     {
         skill1: 'JavaScript',
-        level1: 4,
-        skill2: 'Vue.js',
-        level2: 4
+        level1: 5,
+        skill2: 'React.js',
+        level2: 5
     },
     {
-        skill1: 'React.js',
+        skill1: 'Vue.js',
         level1: 4,
         skill2: 'Git',
         level2: 4
@@ -98,12 +133,12 @@ const skillLevels = [
     {
         skill1: 'SQL',
         level1: 4,
-        skill2: 'Node.js',
-        level2: 3
+        skill2: 'Firebase',
+        level2: 4
     },
     {
-        skill1: 'Firebase',
-        level1: 3,
+        skill1: 'Node.js',
+        level1: 4,
         skill2: 'PostgreSQL',
         level2: 3
     },
@@ -112,6 +147,12 @@ const skillLevels = [
         level1: 3,
         skill2: 'Figma',
         level2: 3
+    },
+    {
+        skill1: 'TypeScript',
+        level1: 2,
+        skill2: 'Tableau',
+        level2: 1
     },
     {
         skill1: 'MongoDB',
@@ -140,16 +181,16 @@ const skillLevelsMobile = [
     },
     {
         skill: 'JavaScript',
-        level: 4
+        level: 5
+    },
+    {
+        skill: 'React.js',
+        level: 5
     },
     {
         skill: 'Vue.js',
         level: 4
-    },
-    {
-        skill: 'React.js',
-        level: 4
-    },
+    }, 
     {
         skill: 'Git',
         level: 4
@@ -159,12 +200,12 @@ const skillLevelsMobile = [
         level: 4
     },
     {
-        skill: 'Node.js',
-        level: 3
+        skill: 'Firebase',
+        level: 4
     },
     {
-        skill: 'Firebase',
-        level: 3
+        skill: 'Node.js',
+        level: 4
     },
     {
         skill: 'PostgreSQL',
@@ -177,6 +218,14 @@ const skillLevelsMobile = [
     {
         skill: 'Figma',
         level: 3
+    },
+    {
+        skill: 'TypeScript',
+        level: 2
+    },
+    {
+        skill: 'Tableau',
+        level: 1
     },
     {
         skill: 'MongoDB',
