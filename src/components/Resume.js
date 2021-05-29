@@ -18,13 +18,18 @@ import smart from '../images/smart.png';
 import chp from '../images/chp.PNG';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
+import devpost_logo from '../images/devpost_logo.png';
 
 const schoolInfo = [
     {
         name: "University of California, Irvine",
         major: "Computer Science",
         degreeType: "B.S.",
-        graduation: "Spring 2021",
+        graduation: "2021",
+        additionalInfo: [
+            "Magna Cum Laude",
+            "Campuswide Honors Collegium"
+        ],
         logo: uci_logo
     }
 ];
@@ -277,6 +282,9 @@ function Resume() {
         </a>
         <a href="https://github.com/AmyWeitzman" target="_blank">
             <img src={github} alt={"GitHub"} width="35" id="github-profile-icon" className="hover-grow"></img>
+        </a>
+        <a href="https://devpost.com/amyweitzman" target="_blank">
+            <img src={devpost_logo} alt={"Devpost"} width="35" id="devpost-profile-icon" className="hover-grow"></img>
         </a>
         <h2 className="resume-section-title">EDUCATION</h2>
         {

@@ -52,6 +52,11 @@
     background-color: var(--theme-gray);
     border-radius: 20px;
     margin-left: 15px;
+    margin-right: 15px;
+}
+
+#devpost-profile-icon {
+    margin-left: 15px;
 }
 
 .hover-grow {
