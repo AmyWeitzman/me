@@ -16,11 +16,11 @@ const activityInfo = [
         jobTitle: "Mentor",
         companyName: "Rewriting the Code",
         location: "",
-        years: "Fall 2020—Present",
+        years: "Fall 2020—Spring 2021",
         skills: [],
         tasks: [
-            "Engage with college female interested in tech weekly to foster development of personal and professional skills",
-            "Guide mentee through successful technical internship recruitment process by providing mentorship and resources"
+            "Engaged with college female interested in tech weekly to foster development of personal and professional skills",
+            "Guided mentee through successful technical internship recruitment process by providing mentorship and resources"
         ],
         logo: rtc
     },
@@ -28,11 +28,11 @@ const activityInfo = [
         jobTitle: "Mentor",
         companyName: "Project Snapshot",
         location: "",
-        years: "Fall 2020—Present",
+        years: "Fall 2020—Spring 2021",
         skills: [],
         tasks: [
-            "Provide mentorship regarding college application process, effective time management, and career options through semi-weekly meetings with high school student interested in pursuing technical field",
-            "Organize mini-projects, such as To-Do List app, to help mentee learn technical skills through peer-programming"
+            "Provided mentorship regarding college application process, effective time management, and career options through semi-weekly meetings with high school student interested in pursuing technical field",
+            "Organized mini-projects, such as To-Do List app, to help mentee learn technical skills through peer-programming"
         ],
         logo: project_snapshot
     },
@@ -43,7 +43,7 @@ const activityInfo = [
         years: "Fall 2020",
         skills: [],
         tasks: [
-            "Collaborate on team of 10 to design and develop clean, responsive website using HTML, CSS, JavaScript, Webflow that promotes STEM TALK mission's of providing STEM education resources for young students, particularly from underrepresented backgrounds"
+            "Collaborated on team of 10 to design and develop clean, responsive website using HTML, CSS, JavaScript, Webflow that promotes STEM TALK mission's of providing STEM education resources for young students, particularly from underrepresented backgrounds"
         ],
         logo: stem_talk
     },
