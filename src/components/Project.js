@@ -16,6 +16,7 @@ import { name as nameFitB, longText as longFitB, shortText as shortFitB, dates a
 import { name as nameRTCJB, longText as longRTCJB, shortText as shortRTCJB, dates as datesRTCJB, techUsed as techRTCJB, link as linkRTCJB} from "../projects/RTCJobBoard";
 import { name as nameIvy, longText as longIvy, shortText as shortIvy, dates as datesIvy, techUsed as techIvy, link as linkIvy} from "../projects/Ivy";
 import { name as nameComSer, longText as longComSer, shortText as shortComSer, dates as datesComSer, techUsed as techComSer, link as linkComSer} from "../projects/CommunityService";
+import { name as nameZot, longText as longZot, shortText as shortZot, dates as datesZot, techUsed as techZot, link as linkZot} from "../projects/ZotDiet";
 
 // project info to display on page
 var projectInfo = {
@@ -98,7 +99,15 @@ var projectInfo = {
         dates: datesComSer,
         techUsed: techComSer,
         link: linkComSer,
-    }
+    },
+    "ZotDiet": {
+        name: nameZot,
+        longText: longZot,
+        shortText: shortZot,
+        dates: datesZot,
+        techUsed: techZot,
+        link: linkZot,
+    },
 };
 
 function toggleShow(name, textLong, textShort) {

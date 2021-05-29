@@ -6,6 +6,8 @@ import Project from "./Project";
 function Projects() {
   return (
     <div className="projects-content" style={{marginTop: 50, marginBottom: 50}}>
+        <Project name="ZotDiet"></Project>
+        <br></br>
         <Project name="HouseHunt"></Project>
         <br></br>
         <Project name="CommunityService"></Project>
