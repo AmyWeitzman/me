@@ -46,3 +46,8 @@
         margin: 20px 5%;
     }
 }
+#terminal-figlet {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px;
+}
