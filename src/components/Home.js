@@ -50,7 +50,7 @@ function Home() {
                 <p id="terminal-command" className="terminal-text"></p>
                 <pre id="terminal-figlet" className='terminal-text'>{figletText}</pre>
                 <p id="terminal-response" className="terminal-text hidden">
-                    {'{\n  "skills": {\n   "Software Engineering",\n   "Data Science",\n   "Cybersecurity"\n  },\n  "interests": [\n    "coding",\n    "sports",\n    "music",\n    "astronomy",\n    "trivia",\n    "food"\n  ]\n}'}
+                    {'{\n  "traits": {\n    "Passionate",\n    "Creative",\n    "Curious"\n  },\n  "skills": {\n    "Software Engineering",\n    "Data Science",\n    "Cybersecurity"\n  },\n  "interests": [\n    "Coding",\n    "Sports",\n    "Music",\n    "Astronomy",\n    "Trivia",\n    "Food"\n  ]\n}'}
                 </p>
                 
             </div>
