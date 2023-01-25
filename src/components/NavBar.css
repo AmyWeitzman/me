@@ -1,8 +1,14 @@
 #nav-bar {
     color: var(--theme-gray);
-    margin: 1% 5%;
+    padding: 1% 10%;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    background-color: black;
+    border-bottom: 3px outset rgba(211, 210, 212, 0.3);
+    z-index: 100;
 }
 
 .nav-link {
