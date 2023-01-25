@@ -31,12 +31,12 @@ function Home() {
         else {   
             if(!done) {                                                      // finished writing command, show results
                 setTimeout(() => {
+                    setSourceText("Amy Weitzman");
                     setCommand(command.slice(0, command.length - 1));        // remove trailing _ when "hit enter"
                     document.getElementById("terminal-command").innerHTML = command;
                     const responseText = document.getElementById("terminal-response");
                     responseText.classList.remove('hidden');
                     responseText.classList.add('visible');
-                    setSourceText("Amy Weitzman");
                 }, 750);
                 setDone(true);  
             }
@@ -48,10 +48,11 @@ function Home() {
             <div id="terminal" className="box-shadow">
                 <h3 id="hello-world" classsName="terminal-text">&#62;_</h3>
                 <p id="terminal-command" className="terminal-text"></p>
-                <p id="terminal-response" className="terminal-text hidden">
-                    {'{\n  "name": { \n    "first": "Amy",\n    "last": "Weitzman"\n  },\n  "education": {\n    "school": "UC Irvine",\n    "major": "Computer Science",\n    "gradYear": 2021\n  },\n  "interests": [\n    "coding",\n    "sports",\n    "music",\n    "astronomy",\n    "trivia",\n    "food"\n  ]\n}'}
-                </p>
                 <pre id="terminal-figlet" className='terminal-text'>{figletText}</pre>
+                <p id="terminal-response" className="terminal-text hidden">
+                    {'{\n  "skills": {\n   "Software Engineering",\n   "Data Science",\n   "Cybersecurity"\n  },\n  "interests": [\n    "coding",\n    "sports",\n    "music",\n    "astronomy",\n    "trivia",\n    "food"\n  ]\n}'}
+                </p>
+                
             </div>
         </div>
     );
