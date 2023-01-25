@@ -344,7 +344,7 @@ function Resume() {
             )
         }
         <a id="download-btn" href="https://github.com/AmyWeitzman/resume/raw/master/Weitzman_Amy.pdf" download>
-            <FontAwesomeIcon id="download-icon" icon={faDownload} />
+            <FontAwesomeIcon id="download-icon" icon={faDownload} /> <span className='download-resume-text'>Download</span>
         </a>
     </div>
   );
