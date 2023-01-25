@@ -16,7 +16,6 @@ import siemens_logo from '../images/siemens_logo.png';
 import awt from '../images/awt.png';
 import rtc from '../images/rtc_outline.png';
 import smart from '../images/smart.png';
-import chp from '../images/chp.PNG';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import devpost_logo from '../images/devpost_logo.png';
@@ -162,12 +161,12 @@ const skillLevels = [
         skill1: 'TypeScript',
         level1: 3,
         skill2: 'Tableau',
-        level2: 2
+        level2: 3
     },
     {
-        skill1: 'MongoDB',
-        level1: 1,
-        skill2: 'GraphQL',
+        skill1: 'GraphQL',
+        level1: 3,
+        skill2: 'MongoDB',
         level2: 1
     }
 ];
@@ -243,30 +242,21 @@ const skillLevelsMobile = [
     },
     {
         skill: 'Tableau',
-        level: 2
-    },
-    {
-        skill: 'MongoDB',
-        level: 1
+        level: 3
     },
     {
         skill: 'GraphQL',
+        level: 3
+    },
+    {
+        skill: 'MongoDB',
         level: 1
     }
 ];
 
 const awards = [
     {
-        jobTitle: "Advancing Women in Technology Scholar",
-        companyName: "Advancing Women in Technology",
-        location: "",
-        years: "2020",
-        skills: [],
-        tasks: [],
-        logo: awt
-    },
-    {
-        jobTitle: "SMART Scholarship",
+        jobTitle: "SMART Scholar",
         companyName: "Department of Defense",
         location: "",
         years: "2018—Present",
@@ -284,21 +274,21 @@ const awards = [
         logo: rtc
     },
     {
-        jobTitle: "Campuswide Honors Collegium",
-        companyName: "UC Irvine",
+        jobTitle: "Advancing Women in Technology Scholar",
+        companyName: "Advancing Women in Technology",
         location: "",
-        years: "2017—Present",
+        years: "2020",
         skills: [],
         tasks: [],
-        logo: chp
+        logo: awt
     }
 ];
 
 function Resume() {
   return (
     <div className="resume-content">
-        <h3 id="swe-tagline">Aspiring Software Engineer</h3>
-        <h5 id="traits-tagline">Passionate | Creative | Curious</h5>
+        <h3 id="swe-tagline">Technology Specialist</h3>
+        <h5 id="traits-tagline">Software Engineering | Data Science | Cybersecurity</h5>
         <a href="https://www.linkedin.com/in/amy-weitzman/" target="_blank">
             <img src={linkedin} alt={"LinkedIn"} width="35" id="linkedin-icon" className="hover-grow"></img>
         </a>
