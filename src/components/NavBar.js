@@ -17,7 +17,6 @@ function NavBar() {
             <NavBarLink linkTo={"Projects"} />
             <NavBarLink linkTo={"Activities"} />
             <NavBarLink linkTo={"Blog"} />
-            <NavBarLink linkTo={"Contact"} />
         </nav>
         <div id="mobile-nav-dropdown">
             <div id="dropdown-icon-container"><FontAwesomeIcon id="dropdown-icon" icon={faBars} onClick={toggleMenu} /></div>
@@ -39,9 +38,6 @@ function NavBar() {
                   </li>
                   <li onClick={toggleMenu} className="nav-item">
                     <NavBarLink linkTo={"Blog"} />
-                  </li>
-                  <li onClick={toggleMenu} className="nav-item">
-                    <NavBarLink linkTo={"Contact"} />
                   </li>
                 </ul> 
               </div>

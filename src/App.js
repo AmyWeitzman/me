@@ -6,7 +6,6 @@ import Home from "./components/Home";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Activities from "./components/Activities";
-import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import Blog1 from "./blogs/Blog1";
 import Blog2 from "./blogs/Blog2";
@@ -33,7 +32,6 @@ function App() {
                         <Route exact path='/resume' component={Resume}></Route>
                         <Route exact path='/projects' component={Projects}></Route>
                         <Route exact path='/activities' component={Activities}></Route>
-                        <Route exact path='/contact' component={Contact}></Route>
                         <Route exact path='/blog' component={Blog}></Route>
                         <Route exact path='/blog/structure-and-applications-of-body-area-networks' component={Blog1}></Route>
                         <Route exact path='/blog/impact-of-computer-science-on-next-generation-education' component={Blog2}></Route>
