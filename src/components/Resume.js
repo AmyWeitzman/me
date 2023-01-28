@@ -19,6 +19,11 @@ import smart from '../images/smart.png';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import devpost_logo from '../images/devpost_logo.png';
+import ec_council_logo from "../images/ec-council_logo.png";
+import neo4j_logo from "../images/neo4j_logo.png";
+import comptia_logo from "../images/comptia_logo.png";
+import tableau_logo from "../images/tableau_logo.png";
+import codepath_logo from "../images/codepath_logo.png";
 
 const schoolInfo = [
     {
@@ -254,6 +259,54 @@ const skillLevelsMobile = [
     }
 ];
 
+const certificates = [
+    {
+        jobTitle: "Ethical Hacking Essentials",
+        companyName: "EC-Council",
+        location: "",
+        years: "Nov 2022",
+        skills: [],
+        tasks: [],
+        logo: ec_council_logo
+    },
+    {
+        jobTitle: "Neo4j",
+        companyName: "Neo4j",
+        location: "",
+        years: "Aug 2022",
+        skills: [],
+        tasks: [],
+        logo: neo4j_logo
+    },
+    {
+        jobTitle: "Security+",
+        companyName: "CompTIA",
+        location: "",
+        years: "Nov 2021",
+        skills: [],
+        tasks: [],
+        logo: comptia_logo
+    },
+    {
+        jobTitle: "Tableau",
+        companyName: "Tableau",
+        location: "",
+        years: "Mar 2021",
+        skills: [],
+        tasks: [],
+        logo: tableau_logo
+    },
+    {
+        jobTitle: "CodePath Cybersecurity",
+        companyName: "CodePath",
+        location: "",
+        years: "Mar 2021",
+        skills: [],
+        tasks: [],
+        logo: codepath_logo
+    },
+];
+
 const awards = [
     {
         jobTitle: "SMART Scholar",
@@ -289,13 +342,13 @@ function Resume() {
     <div className="resume-content">
         <h3 id="swe-tagline">Technology Specialist</h3>
         <h5 id="traits-tagline">Software Engineering | Data Science | Cybersecurity</h5>
-        <a href="https://www.linkedin.com/in/amy-weitzman/" target="_blank">
+        <a href="https://www.linkedin.com/in/amy-weitzman/" target="_blank" rel="noreferrer">
             <img src={linkedin} alt={"LinkedIn"} width="35" id="linkedin-icon" className="hover-grow"></img>
         </a>
-        <a href="https://github.com/AmyWeitzman" target="_blank">
+        <a href="https://github.com/AmyWeitzman" target="_blank" rel="noreferrer">
             <img src={github} alt={"GitHub"} width="35" id="github-profile-icon" className="hover-grow"></img>
         </a>
-        <a href="https://devpost.com/amyweitzman" target="_blank">
+        <a href="https://devpost.com/amyweitzman" target="_blank" rel="noreferrer">
             <img src={devpost_logo} alt={"Devpost"} width="35" id="devpost-profile-icon" className="hover-grow"></img>
         </a>
         <h2 className="resume-section-title">EDUCATION</h2>
@@ -335,6 +388,14 @@ function Resume() {
                 }
             </tbody>
         </table>
+        <h2 className="resume-section-title no-margin-b">CERTIFICATES</h2>
+        {
+            certificates.map((el, idx) => 
+                <div style={{marginBottom: 50}}>
+                    <Experience key={idx} details={el} />
+                </div>    
+            )
+        }
         <h2 className="resume-section-title no-margin-b">AWARDS</h2>
         {
             awards.map((el, idx) => 
