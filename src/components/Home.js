@@ -8,8 +8,8 @@ const MIN_DELAY = 20;    // min delay (ms) for auto-typing
 const MAX_DELAY = 250;   // max delay (ms) for auto-typing
 
 function Home() {
-    const terminalCommand = "curl https://about-me";
-    const [command, setCommand] = useState("$ _");
+    const terminalCommand = "whois \"Amy Weitzman\"";
+    const [command, setCommand] = useState("$ |");
     const [cmdIdx, setIdx] = useState(0);
     const [done, setDone] = useState(false);
 
@@ -22,7 +22,7 @@ function Home() {
     useEffect(() => {
         if(cmdIdx <= terminalCommand.length) {                         // still more text to write
             const interval = setInterval(() => {
-                setCommand(command.slice(0, command.length - 1) + terminalCommand.charAt(cmdIdx) + '_');
+                setCommand(command.slice(0, command.length - 1) + terminalCommand.charAt(cmdIdx) + (cmdIdx === terminalCommand.length ? '': '|'));
                 setIdx(cmdIdx + 1);
                 document.getElementById("terminal-command").innerHTML = command;
             }, randNum());
