@@ -106,3 +106,7 @@ body, html {
 .border-purple {
     border: 2px solid rgba(62, 8, 83, 0.5); 
 }
+
+.page-content {
+    margin-top: 100px;
+}

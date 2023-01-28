@@ -16,11 +16,11 @@ const activityInfo = [
         jobTitle: "Mentor",
         companyName: "Rewriting the Code",
         location: "",
-        years: "Fall 2020—Spring 2021",
+        years: "Fall 2020—Present",
         skills: [],
         tasks: [
-            "Engaged with college female interested in tech weekly to foster development of personal and professional skills",
-            "Guided mentee through successful technical internship recruitment process by providing mentorship and resources"
+            "Engage with 5 college females interested in tech on weekly basis to foster development of personal and professional skills",
+            "Guided mentees through successful technical internship recruitment process by providing mentorship and resources"
         ],
         logo: rtc
     },

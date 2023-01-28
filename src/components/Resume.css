@@ -32,16 +32,11 @@
 #download-btn {
     color: var(--theme-gray);
     font-size: 30px;
-  
+    text-decoration: none;
 }
 
 #download-btn:hover {
     color: var(--theme-purple);
-}
-
-#download-icon {
-    margin-top: 30px;
-    margin-bottom: 15px;    
 }
 
 #linkedin-icon {
@@ -88,4 +83,8 @@
     .full-width {
         width: 100%;
     }
+}
+
+.download-resume-text {
+    font-size: 1.5rem;
 }

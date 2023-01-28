@@ -16,10 +16,14 @@ import siemens_logo from '../images/siemens_logo.png';
 import awt from '../images/awt.png';
 import rtc from '../images/rtc_outline.png';
 import smart from '../images/smart.png';
-import chp from '../images/chp.PNG';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import devpost_logo from '../images/devpost_logo.png';
+import ec_council_logo from "../images/ec-council_logo.png";
+import neo4j_logo from "../images/neo4j_logo.png";
+import comptia_logo from "../images/comptia_logo.png";
+import tableau_logo from "../images/tableau_logo.png";
+import codepath_logo from "../images/codepath_logo.png";
 
 const schoolInfo = [
     {
@@ -162,12 +166,12 @@ const skillLevels = [
         skill1: 'TypeScript',
         level1: 3,
         skill2: 'Tableau',
-        level2: 2
+        level2: 3
     },
     {
-        skill1: 'MongoDB',
-        level1: 1,
-        skill2: 'GraphQL',
+        skill1: 'GraphQL',
+        level1: 3,
+        skill2: 'MongoDB',
         level2: 1
     }
 ];
@@ -243,30 +247,69 @@ const skillLevelsMobile = [
     },
     {
         skill: 'Tableau',
-        level: 2
+        level: 3
+    },
+    {
+        skill: 'GraphQL',
+        level: 3
     },
     {
         skill: 'MongoDB',
         level: 1
+    }
+];
+
+const certificates = [
+    {
+        jobTitle: "Ethical Hacking Essentials",
+        companyName: "EC-Council",
+        location: "",
+        years: "Nov 2022",
+        skills: [],
+        tasks: [],
+        logo: ec_council_logo
     },
     {
-        skill: 'GraphQL',
-        level: 1
-    }
+        jobTitle: "Neo4j",
+        companyName: "Neo4j",
+        location: "",
+        years: "Aug 2022",
+        skills: [],
+        tasks: [],
+        logo: neo4j_logo
+    },
+    {
+        jobTitle: "Security+",
+        companyName: "CompTIA",
+        location: "",
+        years: "Nov 2021",
+        skills: [],
+        tasks: [],
+        logo: comptia_logo
+    },
+    {
+        jobTitle: "Tableau",
+        companyName: "Tableau",
+        location: "",
+        years: "Mar 2021",
+        skills: [],
+        tasks: [],
+        logo: tableau_logo
+    },
+    {
+        jobTitle: "CodePath Cybersecurity",
+        companyName: "CodePath",
+        location: "",
+        years: "Mar 2021",
+        skills: [],
+        tasks: [],
+        logo: codepath_logo
+    },
 ];
 
 const awards = [
     {
-        jobTitle: "Advancing Women in Technology Scholar",
-        companyName: "Advancing Women in Technology",
-        location: "",
-        years: "2020",
-        skills: [],
-        tasks: [],
-        logo: awt
-    },
-    {
-        jobTitle: "SMART Scholarship",
+        jobTitle: "SMART Scholar",
         companyName: "Department of Defense",
         location: "",
         years: "2018—Present",
@@ -284,28 +327,28 @@ const awards = [
         logo: rtc
     },
     {
-        jobTitle: "Campuswide Honors Collegium",
-        companyName: "UC Irvine",
+        jobTitle: "Advancing Women in Technology Scholar",
+        companyName: "Advancing Women in Technology",
         location: "",
-        years: "2017—Present",
+        years: "2020",
         skills: [],
         tasks: [],
-        logo: chp
+        logo: awt
     }
 ];
 
 function Resume() {
   return (
     <div className="resume-content">
-        <h3 id="swe-tagline">Aspiring Software Engineer</h3>
-        <h5 id="traits-tagline">Passionate | Creative | Curious</h5>
-        <a href="https://www.linkedin.com/in/amy-weitzman/" target="_blank">
+        <h3 id="swe-tagline">Technology Specialist</h3>
+        <h5 id="traits-tagline">Software Engineering | Data Science | Cybersecurity</h5>
+        <a href="https://www.linkedin.com/in/amy-weitzman/" target="_blank" rel="noreferrer">
             <img src={linkedin} alt={"LinkedIn"} width="35" id="linkedin-icon" className="hover-grow"></img>
         </a>
-        <a href="https://github.com/AmyWeitzman" target="_blank">
+        <a href="https://github.com/AmyWeitzman" target="_blank" rel="noreferrer">
             <img src={github} alt={"GitHub"} width="35" id="github-profile-icon" className="hover-grow"></img>
         </a>
-        <a href="https://devpost.com/amyweitzman" target="_blank">
+        <a href="https://devpost.com/amyweitzman" target="_blank" rel="noreferrer">
             <img src={devpost_logo} alt={"Devpost"} width="35" id="devpost-profile-icon" className="hover-grow"></img>
         </a>
         <h2 className="resume-section-title">EDUCATION</h2>
@@ -345,6 +388,14 @@ function Resume() {
                 }
             </tbody>
         </table>
+        <h2 className="resume-section-title no-margin-b">CERTIFICATES</h2>
+        {
+            certificates.map((el, idx) => 
+                <div style={{marginBottom: 50}}>
+                    <Experience key={idx} details={el} />
+                </div>    
+            )
+        }
         <h2 className="resume-section-title no-margin-b">AWARDS</h2>
         {
             awards.map((el, idx) => 
@@ -354,7 +405,7 @@ function Resume() {
             )
         }
         <a id="download-btn" href="https://github.com/AmyWeitzman/resume/raw/master/Weitzman_Amy.pdf" download>
-            <FontAwesomeIcon id="download-icon" icon={faDownload} />
+            <FontAwesomeIcon id="download-icon" icon={faDownload} /> <span className='download-resume-text'>Download</span>
         </a>
     </div>
   );
