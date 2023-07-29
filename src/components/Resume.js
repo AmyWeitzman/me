@@ -24,6 +24,7 @@ import neo4j_logo from "../images/neo4j_logo.png";
 import comptia_logo from "../images/comptia_logo.png";
 import tableau_logo from "../images/tableau_logo.png";
 import codepath_logo from "../images/codepath_logo.png";
+import mella_logo from "../images/mella_logo.png";
 
 const schoolInfo = [
     {
@@ -40,6 +41,23 @@ const schoolInfo = [
 ];
 
 const experienceInfo = [
+    {
+        jobTitle: "Data Scientist",
+        companyName: "Mella",
+        location: "Remote",
+        years: "Spring 2023—Present",
+        skills: ["Python", "ML", "AWS", "Git"],
+        tasks: [
+            "Developed generative linear machine learning model in Python with 20K time-series data points and 10 features from 160+ pets to predict body temperature with 95% accuracy",
+            "Evaluated implementation feasibility for 9 models, including LSTM and gradient boosting regressor, by analyzing accuracy, complexity, and efficiency requirements and tradeoffs to recommend final solution",
+            "Performed exploratory data analysis to identify outliers, null values, and inaccurate measurements that may skew results, and applied techniques, including stratified group k-fold cross-validation and oversampling, to reduce bias from unbalanced feature distribution",
+            "Achieved 50% increase in model efficiency and 20% increase in model accuracy by conducting hyperparamter tuning, applying feature engineering techniques, including scaling, binning, logistic and quadratic transformation, and categorical encoding, and feature selection techniques which reduced feature dimensionality by 75%",
+            "Analyzed data with poor model performance to identify underlying issues, including improper thermometer calibration and thermometer detachment from pet during temperature reading, and designed data quality score metric based on this criteria to provide prediction confidence level",
+            "Wrote modular, thoroughly commented code for maximum understandability and reuse",
+            "Deployed serverless API in AWS using API Gateway and Lambda to run model on real-time temperature readings and report temperature prediction with data quality score"
+        ],
+        logo: mella_logo
+    },
     {
         jobTitle: "Software Development and Data Science Intern",
         companyName: "Behaivior",
