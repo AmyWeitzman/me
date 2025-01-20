@@ -19,7 +19,7 @@ function NavBar() {
             <NavBarLink linkTo={"Blog"} />
         </nav>
         <div id="mobile-nav-dropdown">
-            <div id="dropdown-icon-container"><FontAwesomeIcon id="dropdown-icon" icon={faBars} onClick={toggleMenu} /></div>
+            <div id="dropdown-icon-container"><FontAwesomeIcon id="dropdown-icon" icon={faBars} onClick={toggleMenu} className='' /></div>
             {
               menuOpen && 
               <div id="dropdown-nav-container">

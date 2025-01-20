@@ -6,7 +6,7 @@ function NavBarLink({ linkTo }) {
   const linkInfo = NavLinks[linkTo];
 
   return (
-    <NavLink to={linkInfo["path"]} className="nav-link" activeClassName="cur-link">{linkInfo["name"]}</NavLink>
+    <NavLink to={linkInfo["path"]} className={({ isActive }) => isActive ? "cur-link" : "nav-link"}>{linkInfo["name"]}</NavLink>
   );
 }
 

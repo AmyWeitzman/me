@@ -384,7 +384,7 @@ function Resume() {
                 {
                     skillLevels.map((el, idx) => {
                         return (
-                            <tr>
+                            <tr key={idx}>
                                 <td><SkillLevel key={idx+'-1'} skill={el.skill1} level={el.level1} /></td>
                                 <td><SkillLevel key={idx+'-2'} skill={el.skill2} level={el.level2} /></td>
                             </tr>
@@ -398,7 +398,7 @@ function Resume() {
                 {
                     skillLevelsMobile.map((el, idx) => {
                         return (
-                            <tr>
+                            <tr key={idx}>
                                 <td><SkillLevel key={idx} skill={el.skill} level={el.level} /></td>
                             </tr>
                         );
@@ -409,7 +409,7 @@ function Resume() {
         <h2 className="resume-section-title no-margin-b">CERTIFICATES</h2>
         {
             certificates.map((el, idx) => 
-                <div style={{marginBottom: 50}}>
+                <div style={{marginBottom: 50}} key={idx}>
                     <Experience key={idx} details={el} />
                 </div>    
             )
@@ -417,7 +417,7 @@ function Resume() {
         <h2 className="resume-section-title no-margin-b">AWARDS</h2>
         {
             awards.map((el, idx) => 
-                <div style={{marginBottom: 50}}>
+                <div style={{marginBottom: 50}} key={idx}>
                     <Experience key={idx} details={el} />
                 </div>    
             )

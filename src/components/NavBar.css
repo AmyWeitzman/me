@@ -26,7 +26,13 @@
 }
 
 .cur-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    padding-bottom: 10px;
     border-bottom: 2px solid var(--theme-purple);
+    color: var(--theme-gray);
+    text-decoration: none;
 }
 
 #mobile-nav-dropdown {

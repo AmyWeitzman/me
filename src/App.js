@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
@@ -24,25 +24,25 @@ function App() {
             <div>
                 <NavBar />
                 <div className="page-content">
-                    <Switch>
-                        <Route exact path='/' component={Home}></Route>
-                        <Route exact path='/about' component={Home}></Route>
-                        <Route exact path='/home' component={Home}></Route>
-                        <Route exact path='/me' component={Home}></Route>
-                        <Route exact path='/resume' component={Resume}></Route>
-                        <Route exact path='/projects' component={Projects}></Route>
-                        <Route exact path='/activities' component={Activities}></Route>
-                        <Route exact path='/blog' component={Blog}></Route>
-                        <Route exact path='/blog/structure-and-applications-of-body-area-networks' component={Blog1}></Route>
-                        <Route exact path='/blog/impact-of-computer-science-on-next-generation-education' component={Blog2}></Route>
-                        <Route exact path='/blog/it-just-takes-a-ripple-to-start-a-wave-of-change' component={Blog3}></Route>
-                        <Route exact path='/blog/my-legacy-at-uci' component={Blog4}></Route>
-                        <Route exact path='/blog/breaking-tackles' component={Blog5}></Route>
-                        <Route exact path='/blog/cs-inspiration-and-goals' component={Blog6}></Route>
-                        <Route exact path='/blog/if-i-had-infinite-time-and-money' component={Blog7}></Route>
-                        <Route exact path='/blog/unique-interview-questions' component={Blog8}></Route>
-                        <Route component={Error}></Route>
-                    </Switch>
+                    <Routes>
+                        <Route exact path='/' element={<Home />}></Route>
+                        <Route exact path='/about' element={<Home />}></Route>
+                        <Route exact path='/home' element={<Home />}></Route>
+                        <Route exact path='/me' element={<Home />}></Route>
+                        <Route exact path='/resume' element={<Resume />}></Route>
+                        <Route exact path='/projects' element={<Projects />}></Route>
+                        <Route exact path='/activities' element={<Activities />}></Route>
+                        <Route exact path='/blog' element={<Blog />}></Route>
+                        <Route exact path='/blog/structure-and-applications-of-body-area-networks' element={<Blog1 />}></Route>
+                        <Route exact path='/blog/impact-of-computer-science-on-next-generation-education' element={<Blog2 />}></Route>
+                        <Route exact path='/blog/it-just-takes-a-ripple-to-start-a-wave-of-change' element={<Blog3 />}></Route>
+                        <Route exact path='/blog/my-legacy-at-uci' element={<Blog4 />}></Route>
+                        <Route exact path='/blog/breaking-tackles' element={<Blog5 />}></Route>
+                        <Route exact path='/blog/cs-inspiration-and-goals' element={<Blog6 />}></Route>
+                        <Route exact path='/blog/if-i-had-infinite-time-and-money' element={<Blog7 />}></Route>
+                        <Route exact path='/blog/unique-interview-questions' element={<Blog8 />}></Route>
+                        <Route element={<Error />}></Route>
+                    </Routes>
                 </div>
             </div>
         </Router>
