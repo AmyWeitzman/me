@@ -55,9 +55,6 @@
 
 .skill-list {
     display: flex;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 40px;
     flex-wrap: wrap;
 }
 
@@ -67,3 +64,11 @@
     }
 }
 
+.md-skill-badge p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.md-skill-badge img {
+    border-radius: 12px;
+}

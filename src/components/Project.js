@@ -144,7 +144,7 @@ function toggleShow(name, textLong, textShort) {
             <div className="skill-list">
                 {
                     projectDetails.techUsed.split(",").map((skill, idx) => 
-                        <Badge key={idx} text={skill.trim()} color="purple" bg="bg-light-purple" />
+                        <Badge key={idx} text={skill.trim()} isMarkdown={true} color="purple" bg="bg-light-purple" />
                     )
                 }
             </div>

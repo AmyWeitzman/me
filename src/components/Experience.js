@@ -38,7 +38,7 @@ function Experience(props) {
             <div className="skill-list experience-info-item">
                 {
                     props.details.skills.map((skill, idx) => 
-                        <Badge key={idx} text={skill} color="purple" bg="bg-light-purple" />
+                        <Badge key={idx} text={skill} isMarkdown={true} color="purple" bg="bg-light-purple" />
                     )
                 }
             </div>
