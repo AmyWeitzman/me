@@ -1,5 +1,5 @@
 import React from 'react';
-import StarRatingComponent from 'react-star-rating-component';
+import ReactStars from "react-rating-stars-component";
 import '../App.css';
 import './SkillLevel.css';
 
@@ -7,14 +7,14 @@ function SkillLevel(props) {
     return (
         <div className="skill-content">
             <p className="skill-name">{props.skill}</p>
-            <StarRatingComponent 
-                name={props.skill}
-                editing={false}
-                starCount={5}
-                value={props.level}
-                starColor="#9034c7"
-                emptyStarColor="#d3d2d4"
+            <ReactStars 
                 className="stars"
+                count={5}
+                value={props.level}
+                color="#d3d2d4"
+                activeColor="#9034c7"
+                edit={false}
+                size={36}
             />
         </div>  
     );
