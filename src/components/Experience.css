@@ -55,6 +55,7 @@
 
 .skill-list {
     display: flex;
+    margin-left: 30px;
     flex-wrap: wrap;
 }
 
