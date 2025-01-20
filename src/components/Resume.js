@@ -45,7 +45,7 @@ const experienceInfo = [
         jobTitle: "Data Scientist",
         companyName: "Mella",
         location: "Remote",
-        years: "Spring 2023—Present",
+        years: "Spring 2023—Winter 2025",
         skills: ["Python", "ML", "AWS", "Git"],
         tasks: [
             "Developed generative linear machine learning model in Python with 20K time-series data points and 10 features from 160+ pets to predict body temperature with 95% accuracy",
