@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHouseChimney, faCode, faFootball, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 import NavBarLink from './NavBarLink';
+import { NavLinks } from "../links";
+import MyLogo from '../images/amy_weitzman_logo_slim.png';
 
 function NavBar() {
   const [menuOpen, toggleMenuState] = useState(false);
@@ -11,12 +14,15 @@ function NavBar() {
 
   return (
     <div id="navbar-container">
+        <NavLink to={NavLinks["About"]["path"]}>
+          <img id="navbar-my-logo" src={MyLogo} alt="Logo representing Amy Weitzman: the initials A and W inside coding brackets" width="125px" />
+        </NavLink>
+        <p id="navbar-my-name">Amy Weitzman</p>
         <nav id="nav-bar">
-            <NavBarLink linkTo={"About"} />
-            <NavBarLink linkTo={"Resume"} />
-            <NavBarLink linkTo={"Projects"} />
-            <NavBarLink linkTo={"Activities"} />
-            <NavBarLink linkTo={"Blog"} />
+            <NavBarLink linkTo={"About"} icon={faHouseChimney} />
+            <NavBarLink linkTo={"Resume"} icon={faCode} />
+            <NavBarLink linkTo={"Activities"} icon={faFootball} />
+            <NavBarLink linkTo={"Contact"} icon={faEnvelope} />
         </nav>
         <div id="mobile-nav-dropdown">
             <div id="dropdown-icon-container"><FontAwesomeIcon id="dropdown-icon" icon={faBars} onClick={toggleMenu} className='' /></div>
@@ -31,13 +37,10 @@ function NavBar() {
                     <NavBarLink linkTo={"Resume"} />
                   </li>
                   <li onClick={toggleMenu} className="nav-item">
-                    <NavBarLink linkTo={"Projects"} />
-                  </li>
-                  <li onClick={toggleMenu} className="nav-item">
                     <NavBarLink linkTo={"Activities"} />
                   </li>
                   <li onClick={toggleMenu} className="nav-item">
-                    <NavBarLink linkTo={"Blog"} />
+                    <NavBarLink linkTo={"Contact"} />
                   </li>
                 </ul> 
               </div>
