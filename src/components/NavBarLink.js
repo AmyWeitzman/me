@@ -9,7 +9,7 @@ function NavBarLink({ linkTo, icon }) {
 
   return (
     <NavLink to={linkInfo["path"]} className={({ isActive }) => isActive ? "cur-link" : "nav-link"}>
-      <FontAwesomeIcon className="nav-icon" icon={icon} /> {linkInfo["name"]}
+      <FontAwesomeIcon className="nav-icon" icon={icon} /> <span className='nav-link-text'>{linkInfo["name"]}</span>
     </NavLink>
   );
 }
