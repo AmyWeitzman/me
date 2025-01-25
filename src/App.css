@@ -1,7 +1,7 @@
 /* global variables */
 :root {
     --theme-purple: #9034c7;
-    --theme-green: #39ff14;
+    --theme-green: #1CD92F;
     --theme-gray: #d3d2d4;
     --theme-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -10,6 +10,7 @@ body, html {
     background-color: black;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: var(--theme-font);
+    height: 100%;
 }
 
 .box-shadow {
@@ -109,4 +110,12 @@ body, html {
 
 .page-content {
     margin-top: 125px;
+    background-color: black;
+}
+
+.page-content:has(.home-content) {
+    background-image: url('./images/space.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

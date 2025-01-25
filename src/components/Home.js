@@ -57,12 +57,14 @@ function Home() {
     return (
         <div className="home-content">
             <div id="terminal" className="box-shadow">
-                <h3 id="hello-world" className="terminal-text">&#62;_</h3>
-                <p id="terminal-command" className="terminal-text"></p>
-                <pre id="terminal-figlet" className='terminal-text'>{figletText}</pre>
-                <p id="terminal-response" className="terminal-text hidden">
-                    {'{\n  "traits": {\n    "Passionate",\n    "Creative",\n    "Curious"\n  },\n  "skills": {\n    "Software Engineering",\n    "Data Science",\n    "Cybersecurity"\n  },\n  "interests": [\n    "Coding",\n    "Sports",\n    "Music",\n    "Astronomy",\n    "Trivia",\n    "Food"\n  ]\n}'}
-                </p>
+                <div id="terminal-content-container">
+                    <h3 id="hello-world" className="terminal-text">&#62;_</h3>
+                    <p id="terminal-command" className="terminal-text"></p>
+                    <pre id="terminal-figlet" className='terminal-text'>{figletText}</pre>
+                    <p id="terminal-response" className="terminal-text hidden">
+                        {'{\n  "traits": {\n    "Passionate",\n    "Creative",\n    "Curious"\n  },\n  "skills": {\n    "Software Engineering",\n    "Data Science",\n    "Cybersecurity"\n  },\n  "interests": [\n    "Coding",\n    "Sports",\n    "Music",\n    "Astronomy",\n    "Trivia",\n    "Food"\n  ]\n}'}
+                    </p>
+                </div>
             </div>
         </div>
     );
