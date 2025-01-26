@@ -7,9 +7,23 @@
     justify-content: space-between;
 }
 
+.edu-school-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
 .edu-school-info, .edu-course-info {
     display: flex;
-    width: 50%;
+    width: 45%;
+}
+
+
+.edu-school-info-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .school-logo {
@@ -60,7 +74,7 @@
 
 .course-item {
     padding: 10px;
-    margin: 5px;
+    margin: 7px;
     border-radius: 50%;  /* circle */
     width: 40px; 
     height: 40px;
@@ -73,6 +87,7 @@
     width: 30px;
     height: 30px;
     color: rgb(0, 0, 0);
+    margin: 0 5px;
 }
 
 .course-placeholder-icon {
@@ -89,5 +104,37 @@
     font-size: 1.25rem;
     text-align: center;
     width: 75%;
-    margin: 5px;;
+    margin: 0;
+}
+
+.course-title.justify-left {
+    text-align: left;
+}
+
+.course-title.justify-right {
+    text-align: right;
+}
+
+.scholarships-header {
+    font-weight: bold;
+    margin: 4px 0;
+    font-size: 1.25rem;
+}
+
+.scholarship-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.scholarship-logo {
+    width: 50px;
+    height: 50px;
+    justify-self: start;
+    margin-right: 10px;
+}
+
+.scholarship-title {
+    font-size: 1.25rem;
+    margin: 0;
 }

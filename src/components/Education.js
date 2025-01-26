@@ -10,17 +10,32 @@ function Education(props) {
   return (
     <div className="edu-container">
       <div className='edu-school-info'>
-        <img src={props.details.logo} alt={props.details.name + " logo"} className="school-logo"></img>
-        <div className="edu-info-container">
-          <p className="school-name edu-info-item">{props.details.name}</p>
-          <p className="degree-type edu-info-item">{props.details.degreeType} in {props.details.major}</p>
-          { 
-            props.details.additionalInfo.map(item => <p className="additional-info-item edu-info-item">{item}</p>)
-          }
+        <div className='edu-school-info-top'>
+            <img src={props.details.logo} alt={props.details.name + " logo"} className="school-logo"></img>
+            <div className="edu-info-container">
+              <p className="school-name edu-info-item">{props.details.name}</p>
+              <p className="degree-type edu-info-item">{props.details.degreeType} in {props.details.major}</p>
+              { 
+                props.details.additionalInfo.map(item => <p className="additional-info-item edu-info-item">{item}</p>)
+              }
+            </div>
         </div>
+        { props.details.scholarships.length > 0 &&
+          <div className='edu-scholarships-container'>
+            <p className='scholarships-header'>Scholarships</p>
+            {
+              props.details.scholarships.map((scholarship, idx) => (
+                <div className='scholarship-item'>
+                  <img className="scholarship-logo" src={scholarship.logo} alt={`${scholarship.title}-logo`}></img>
+                  <p key={idx} className="scholarship-title">{scholarship.title}</p>
+                </div>
+              ))
+            }
+          </div>
+        }
       </div>
       <div id={EDU_COURSES_KEY} className='edu-courses-container'>
-        {
+        { props.details.courses.length > 0 &&
           props.details.courses.map((course, idx) => {
             let nextCourse = null;
             if(idx < props.details.courses.length - 1) {

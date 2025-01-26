@@ -16,9 +16,9 @@ import hkp_logo from '../images/hkp_logo.png';
 import propheto_logo from '../images/propheto_logo.png';
 import dia_logo from '../images/dia_logo.png';
 import siemens_logo from '../images/siemens_logo.png';
-import awt from '../images/awt.png';
+
 import rtc from '../images/rtc_outline.png';
-import smart from '../images/smart.png';
+
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import devpost_logo from '../images/devpost_logo.png';
@@ -322,36 +322,6 @@ const certificates = [
     },
 ];
 
-const awards = [
-    {
-        jobTitle: "SMART Scholar",
-        companyName: "Department of Defense",
-        location: "",
-        years: "2018—Present",
-        skills: [],
-        tasks: [],
-        logo: smart
-    },
-    {
-        jobTitle: "Rewriting the Code Fellow",
-        companyName: "Rewriting the Code",
-        location: "",
-        years: "2018—Present",
-        skills: [],
-        tasks: [],
-        logo: rtc
-    },
-    {
-        jobTitle: "Advancing Women in Technology Scholar",
-        companyName: "Advancing Women in Technology",
-        location: "",
-        years: "2020",
-        skills: [],
-        tasks: [],
-        logo: awt
-    }
-];
-
 function Resume() {
   return (
     <div className="resume-content">
@@ -431,14 +401,14 @@ function Resume() {
                 </div>    
             )
         }
-        <h2 className="resume-section-title no-margin-b">AWARDS</h2>
+        {/* <h2 className="resume-section-title no-margin-b">AWARDS</h2>
         {
             awards.map((el, idx) => 
                 <div style={{marginBottom: 50}} key={idx}>
                     <Experience key={idx} details={el} />
                 </div>    
             )
-        }
+        } */}
         <a id="download-btn" href="https://github.com/AmyWeitzman/resume/raw/master/Weitzman_Amy.pdf" download>
             <FontAwesomeIcon id="download-icon" icon={faDownload} /> <span className='download-resume-text'>Download</span>
         </a>

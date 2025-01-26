@@ -1,6 +1,8 @@
 import { faChartDiagram, faLaptopCode, faBrain, faServer, faShield, faAtom } from '@fortawesome/free-solid-svg-icons';
 
 import uci_logo from './images/uci_logo.png';
+import smart from './images/smart.png';
+import awt from './images/awt.png';
 
 export const schoolInfo = [
     {
@@ -44,6 +46,16 @@ export const schoolInfo = [
                 title: "Software Engineering",
                 icon: faLaptopCode,
                 color: '#1db83f'  /* green */
+            }
+        ],
+        scholarships: [
+            {
+                title: "DoD Science, Mathematics, and Research for Transformation (SMART)",
+                logo: smart
+            },
+            {
+                title: "Advancing Women in Technology",
+                logo: awt
             }
         ]
     },
