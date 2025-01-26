@@ -32,16 +32,7 @@ function App() {
                         <Route exact path='/resume' element={<Resume />}></Route>
                         <Route exact path='/projects' element={<Projects />}></Route>
                         <Route exact path='/activities' element={<Activities />}></Route>
-                        <Route exact path='/blog' element={<Blog />}></Route>
-                        <Route exact path='/blog/structure-and-applications-of-body-area-networks' element={<Blog1 />}></Route>
-                        <Route exact path='/blog/impact-of-computer-science-on-next-generation-education' element={<Blog2 />}></Route>
-                        <Route exact path='/blog/it-just-takes-a-ripple-to-start-a-wave-of-change' element={<Blog3 />}></Route>
-                        <Route exact path='/blog/my-legacy-at-uci' element={<Blog4 />}></Route>
-                        <Route exact path='/blog/breaking-tackles' element={<Blog5 />}></Route>
-                        <Route exact path='/blog/cs-inspiration-and-goals' element={<Blog6 />}></Route>
-                        <Route exact path='/blog/if-i-had-infinite-time-and-money' element={<Blog7 />}></Route>
-                        <Route exact path='/blog/unique-interview-questions' element={<Blog8 />}></Route>
-                        <Route element={<Error />}></Route>
+                        <Route path='*' element={<Error />}></Route>
                     </Routes>
                 </div>
             </div>
