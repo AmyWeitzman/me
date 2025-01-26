@@ -6,8 +6,11 @@ import './Resume.css';
 import Education from "./Education";
 import Experience from "./Experience";
 import SkillLevel from "./SkillLevel";
+import ResumeIconLink from "./ResumeIconLink";
+import CustomTimeline from './CustomTimeline';
 
-import uci_logo from '../images/uci_logo.png';
+import { schoolInfo } from '../resumeContent';
+
 import behaivior_logo from '../images/behaivior_logo.png';
 import hkp_logo from '../images/hkp_logo.png';
 import propheto_logo from '../images/propheto_logo.png';
@@ -26,26 +29,15 @@ import tableau_logo from "../images/tableau_logo.png";
 import codepath_logo from "../images/codepath_logo.png";
 import mella_logo from "../images/mella_logo.png";
 
-const schoolInfo = [
-    {
-        name: "University of California, Irvine",
-        major: "Computer Science",
-        degreeType: "B.S.",
-        graduation: "2021",
-        additionalInfo: [
-            "Magna Cum Laude",
-            "Campuswide Honors Collegium"
-        ],
-        logo: uci_logo
-    }
-];
+
 
 const experienceInfo = [
     {
         jobTitle: "Data Scientist",
         companyName: "Mella",
         location: "Remote",
-        years: "Spring 2023—Winter 2025",
+        startDate: "Apr 2023",
+        endDate: "Jan 2025",
         skills: ["Python", "ML", "AWS", "Git"],
         tasks: [
             "Developed generative linear machine learning model in Python with 20K time-series data points and 10 features from 160+ pets to predict body temperature with 95% accuracy",
@@ -62,7 +54,8 @@ const experienceInfo = [
         jobTitle: "Software Development and Data Science Intern",
         companyName: "Behaivior",
         location: "Remote",
-        years: "Winter 2020—Spring 2021",
+        startDate: "Jan 2021",
+        endDate: "May 2021",
         skills: ["React", "Redux", "TypeScript", "Firebase", "Figma", "Python", "ML", "Git", "Agile"],
         tasks: [
             "Streamlined daily survey process by designing and implementing custom survey component using Figma, TypeScript, React.js, Redux, Firebase yielding 3x better response rate and improving data collection efficiency by 50%",
@@ -79,7 +72,8 @@ const experienceInfo = [
         jobTitle: "Front-End Developer Intern",
         companyName: "HKP Solutions",
         location: "Remote",
-        years: "Winter 2020—Spring 2021",
+        startDate: "Dec 2020",
+        endDate: "May 2021",
         skills: ["HTML", "CSS", "React", "Redux", "Jest", "Git", "Agile"],
         tasks: [
             "Built 4 customer-oriented features to enhance company web application on team of 8 using React.js and Redux",
@@ -92,7 +86,8 @@ const experienceInfo = [
         jobTitle: "Software Developer Intern",
         companyName: "Propheto",
         location: "Remote",
-        years: "Fall 2020",
+        startDate: "Sep 2020",
+        endDate: "Nov 2020",
         skills: ["HTML", "CSS", "Vue", "Firebase", "Git", "Agile"],
         tasks: [
             "Enhanced website on team of 4 using Vue.js, Quasar, Firebase to advance data science talent platform for startup",
@@ -106,12 +101,13 @@ const experienceInfo = [
         jobTitle: "Data Intern",
         companyName: "Defense Intelligence Agency",
         location: "Washington, DC",
-        years: "Summer 2019",
+        startDate: "Jun 2019",
+        endDate: "Sep 2019",
         skills: ["Python", "AWS", "Jenkins", "Git"],
         tasks: [
             "Configured 2-node Amazon Web Services (AWS) ElasticMapReduce (EMR) cluster using Jenkins script to accelerate processing of 2 terabytes of data by 4x for 16 US defense intelligence organizations",
-            "Briefed Chief Information Officer and department’s senior leaders about potential utilization of clusters to optimize data handling efficiency for department’s 10 other big data projects and demoed cluster functionality",
-            "Expedited team’s onboarding process for 4 new hires by documenting development environment set-up, yielding a 20% reduction in mentor workloads and 50% reduction in new hire onboarding time"
+            "Briefed Chief Information Officer and department's senior leaders about potential utilization of clusters to optimize data handling efficiency for department’s 10 other big data projects and demoed cluster functionality",
+            "Expedited team's onboarding process for 4 new hires by documenting development environment set-up, yielding a 20% reduction in mentor workloads and 50% reduction in new hire onboarding time"
         ],
         logo: dia_logo
     },
@@ -119,7 +115,8 @@ const experienceInfo = [
         jobTitle: "Software Engineering Intern",
         companyName: "Siemens PLM Software",
         location: "Cypress, CA",
-        years: "Fall 2017—Spring 2019",
+        startDate: "Sep 2017",
+        endDate: "Jun 2019",
         skills: ["Java", "HTML", "CSS", "Vue", "Agile"],
         tasks: [
             "Developed software bug tracking application on team of 10 using Java, HTML, CSS, Vue.js following Agile practices to maximize product lifecycle management capability of 1000+ manufacturing companies across 4 continents",
@@ -358,26 +355,46 @@ const awards = [
 function Resume() {
   return (
     <div className="resume-content">
-        <h3 id="swe-tagline">Technology Specialist</h3>
+        <h3 id="swe-tagline">Technology Enthusiast</h3>
         <h5 id="traits-tagline">Software Engineering | Data Science | Cybersecurity</h5>
-        <a href="https://www.linkedin.com/in/amy-weitzman/" target="_blank" rel="noreferrer">
-            <img src={linkedin} alt={"LinkedIn"} width="35" id="linkedin-icon" className="hover-grow"></img>
-        </a>
-        <a href="https://github.com/AmyWeitzman" target="_blank" rel="noreferrer">
-            <img src={github} alt={"GitHub"} width="35" id="github-profile-icon" className="hover-grow"></img>
-        </a>
-        <a href="https://devpost.com/amyweitzman" target="_blank" rel="noreferrer">
-            <img src={devpost_logo} alt={"Devpost"} width="35" id="devpost-profile-icon" className="hover-grow"></img>
-        </a>
+        <ResumeIconLink 
+            id="linkedin-icon"
+            url="https://www.linkedin.com/in/amy-weitzman/"
+            image={linkedin} 
+            altText="LinkedIn"
+        />
+        <ResumeIconLink 
+            id="github-profile-icon"
+            url="https://github.com/AmyWeitzman"
+            image={github}
+            altText="GitHub"
+        />
+        <ResumeIconLink
+            id="devpost-profile-icon"
+            url="https://devpost.com/amyweitzman"
+            image={devpost_logo}
+            altText="Devpost"
+        />
         <h2 className="resume-section-title">EDUCATION</h2>
-        {
-            schoolInfo.map((el, idx) => <Education key={idx} details={el} />)
-        }
+        <CustomTimeline elements={schoolInfo.map((el, idx) => (
+            {
+                startTime: el.startYear,
+                endTime: el.graduationYear,
+                content: <Education key={`edu-${idx}`} eduIdx={idx} details={el} />
+            }
+        ))} />
         <br></br>
         <h2 className="resume-section-title no-margin-b">EXPERIENCE</h2>
-        {
+        <CustomTimeline elements={experienceInfo.map((el, idx) => (
+            {
+                startTime: el.startDate,
+                endTime: el.endDate,
+                content: <Experience key={`exp-${idx}`} details={el} />
+            }
+        ))} />
+        {/* {
             experienceInfo.map((el, idx) => <Experience key={idx} details={el} />)
-        }
+        } */}
         <h2 className="resume-section-title no-margin-b">SKILLS</h2>
         <table id="skills-table">
             <tbody>
