@@ -4,6 +4,18 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 1900px) {
+    .resume-content {
+        margin: 20px 10%;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .resume-content {
+        margin: 20px 5%;
+    }
+}
+
 #swe-tagline {
     font-size: 2rem;
     margin-bottom: 0;
