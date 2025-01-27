@@ -1,0 +1,7 @@
+.MuiTimeline-root, .MuiTimelineContent-root {
+    padding-right: 0 !important;
+}
+
+.MuiTimeline-root, .MuiTimelineItem-root, .MuiTypography-root, .MuiTypography-body1, .MuiTimelineOppositeContent-root {
+    font-family: var(--theme-font) !important;
+}

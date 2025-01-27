@@ -13,6 +13,7 @@ function CustomTimeline(props) {
                 flex: 0.2,
                 fontSize: '1.25rem',
                 fontWeight: 'bold',
+                paddingLeft: 0,
             },
         }}
     > 

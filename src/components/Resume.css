@@ -1,6 +1,6 @@
 .resume-content {
     color: var(--theme-gray);
-    margin: 20px 16%;
+    margin: 20px 15%;
     text-align: center;
 }
 
@@ -27,6 +27,7 @@
     color: var(--theme-purple);
     margin-top: 2px;
     margin-bottom: 10px;
+    text-shadow: 0 0 1px var(--theme-gray);
 }
 
 .resume-section-title {
