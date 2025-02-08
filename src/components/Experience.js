@@ -1,40 +1,33 @@
 import React from 'react';
 import '../App.css';
 import './Experience.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Badge from "./Badge";
 
-// const skill_colors = {
-//     'Python': 'dark-purple',
-//     'Java': 'dark-orange',
-//     'C++': 'dark-yellow',
-//     'SQL': 'dark-green',
-//     'HTML': 'light-orange',
-//     'CSS': 'light-yellow',
-//     'JavaScript': 'dark-blue',
-//     'Vue.js': 'light-green',
-//     'React.js': 'light-red',
-//     'Node.js': 'dark-red',
-//     'Git': 'light-turquoise',
-//     'Agile': 'light-gray',
-//     'Figma': 'light-blue',
-//     'Linux': 'dark-gray',
-//     'Firebase': 'light-pink',
-//     'PostgreSQL': 'light-purple'
-// };
-
 function Experience(props) {
   return (
-    <div className="experience-container">
+    <Accordion className='experience-accordion'>
+        <AccordionSummary
+            expandIcon={<ExpandMoreIcon className='experience-accordion-toggle-icon' />}
+            aria-controls="experience-content"
+            className='experience-accordion-header'
+        >
         <img src={props.details.logo} alt={props.details.companyName + " logo"} className="company-logo"></img>
         <div className="experience-info-container">
-            <div className="title-years-row">
-                <p className="job-title experience-info-item">{props.details.jobTitle}</p>
-                <p className="years experience-info-item">{props.details.years}</p>
+            <div className='experience-info-item-header'>
+                <p className="experience-info-item">
+                    <span className='job-title'>{props.details.jobTitle}</span>, {' '}
+                    {props.details.companyName} { ' ' }
+                    {props.details.location && <span>({props.details.location})</span>}
+                </p>
             </div>
-            <p className="company-info experience-info-item">{props.details.companyName}
-                { props.details.location && <span className="location">, {props.details.location}</span>}
-            </p>
             <div className="skill-list experience-info-item">
                 {
                     props.details.skills.map((skill, idx) => 
@@ -42,15 +35,20 @@ function Experience(props) {
                     )
                 }
             </div>
-            <ul className="task-list">
-                {
-                    props.details.tasks.map((task, idx) => 
-                        <li key={idx} className="task experience-info-item">{task}</li>
-                    )
-                }
-            </ul>
         </div>
-    </div>
+        </AccordionSummary>
+        <AccordionDetails>
+            <div className='task-list'>
+                { props.details.tasks.map((task, idx) =>
+                    <div key={idx} className="task-container experience-info-item">
+                        <FontAwesomeIcon className="task-bullet-icon" icon={faChevronRight} />
+                        <p className='task'>{task}</p>
+                    </div>
+                )
+                }
+            </div>
+        </AccordionDetails>
+    </Accordion>
   );
 }
 

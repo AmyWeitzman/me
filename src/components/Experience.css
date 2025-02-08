@@ -1,16 +1,24 @@
-.experience-container {
-    color: var(--theme-gray);
-    text-align: left;
-    padding-left: 10px;
-    display: inline;
+.MuiAccordion-root {
+    background-color: transparent !important;
+}
+
+.MuiAccordion-root , .MuiSvgIcon-root {
+    color: var(--theme-gray) !important;
+}
+
+.experience-accordion-header, .experience-info-item {
+    font-family: var(--theme-font);
+}
+
+.experience-accordion-toggle-icon {
+    font-size: 2.5rem !important;
 }
 
 .company-logo {
-    width: 12%;
-    min-width: 100px;
+    width: 120px;
+    height: 120px;
     justify-self: start;
     float: left;
-    margin-top: 20px;
 }
 
 .experience-info-container {
@@ -19,16 +27,16 @@
     grid-gap: 1px;
 }
 
-.experience-info-item {
-    margin-left: 20px;
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.experience-info-item-header {
+    display: flex;
+    align-items: center;
 }
 
-.title-years-row {
-    display: grid;
-    grid-template-columns: auto auto;
+.experience-info-item {
+    margin-left: 20px;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .job-title {
@@ -36,26 +44,29 @@
     justify-self: start;
 }
 
-.location {
-    font-style: italic;
+.task-container {
+    margin: 25px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--theme-gray);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
-.task-list {
-    margin-top: 0;
+.task-bullet-icon {
+    margin: 5px;
+    color: var(--theme-green);
+    font-size: 1.5rem;
 }
 
 .task {
-    margin-left: 20px;
-}
-
-.years {
-    justify-self: end;
-    font-style: italic;
+    margin: 0 10px;
 }
 
 .skill-list {
     display: flex;
-    margin-left: 30px;
+    margin-left: 10px;
     flex-wrap: wrap;
 }
 
@@ -67,7 +78,7 @@
 
 .md-skill-badge p {
     margin: 5px;
-    padding: 5px;
+    padding: 0 5px;
 }
 
 .md-skill-badge img {

@@ -12,6 +12,7 @@ const SKILL_TO_MARKDOWN_BADGE_MAP = {
   "JavaScript": "![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)",
   "AWS": "![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)",
   "Git": "![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)",
+  "Jira": "![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)",
   "Agile": "![Agile](https://img.shields.io/badge/Agile-%230090FF.svg?style=for-the-badge&logo=Agile&logoColor=white)",
   "Figma": "![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)",
   "Linux": "![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)",
@@ -30,7 +31,9 @@ const SKILL_TO_MARKDOWN_BADGE_MAP = {
   "REST APIs": "![REST APIs](https://img.shields.io/badge/REST-APIs-007ACC?style=for-the-badge&logo=rest&logoColor=white)",
   "Tableau": "![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)",
   "GraphQL": "![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)",
-  "MongoDB": "![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)"
+  "MongoDB": "![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)",
+  "Oracle": "![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)",
+  "Bash": "![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)"
 }
 
 function Badge(props) {
