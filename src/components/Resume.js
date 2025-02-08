@@ -327,24 +327,36 @@ function Resume() {
     <div className="resume-content">
         <h3 id="swe-tagline">Technology Enthusiast</h3>
         <h5 id="traits-tagline">Software Engineering | Data Science | Cybersecurity</h5>
+        <Tooltip title="LinkedIn">
+            <span>
         <ResumeIconLink 
             id="linkedin-icon"
             url="https://www.linkedin.com/in/amy-weitzman/"
             image={linkedin} 
             altText="LinkedIn"
         />
+            </span>
+        </Tooltip>
+        <Tooltip title="GitHub">
+            <span>
         <ResumeIconLink 
             id="github-profile-icon"
             url="https://github.com/AmyWeitzman"
             image={github}
             altText="GitHub"
         />
+            </span>
+        </Tooltip>
+        <Tooltip title="Devpost">
+            <span>
         <ResumeIconLink
             id="devpost-profile-icon"
             url="https://devpost.com/amyweitzman"
             image={devpost_logo}
             altText="Devpost"
         />
+            </span>
+        </Tooltip>
         <h2 className="resume-section-title">EDUCATION</h2>
         <CustomTimeline elements={schoolInfo.map((el, idx) => (
             {
