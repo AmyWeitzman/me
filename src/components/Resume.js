@@ -120,8 +120,8 @@ function Resume() {
                 content: <Experience key={`exp-${idx}`} details={el} />
             }
         ))} />
-        <a id="download-btn" href="https://github.com/AmyWeitzman/resume/raw/master/Weitzman_Amy.pdf" download>
-            <FontAwesomeIcon id="download-icon" icon={faDownload} /> <span className='download-resume-text'>Download</span>
+        <a id="download-btn" href="https://docs.google.com/document/d/1y0NEipN5VtPHLi9XaYeCIJUqzGe0XDAAofJnFoR8Enc/edit?usp=sharing" target="_blank">
+            <FontAwesomeIcon id="download-icon" icon={faDownload} /> <span className='download-resume-text'>Download Resume</span>
         </a>
     </div>
   );

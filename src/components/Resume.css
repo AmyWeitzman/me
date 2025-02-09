@@ -48,10 +48,11 @@
     color: var(--theme-gray);
     font-size: 30px;
     text-decoration: none;
+    padding-bottom: 50px;
 }
 
-#download-btn:hover {
-    color: var(--theme-purple);
+#download-btn:hover .download-resume-text {
+    border-bottom: 2px solid white;
 }
 
 #linkedin-icon {
