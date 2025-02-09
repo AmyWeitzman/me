@@ -84,3 +84,8 @@
 .md-skill-badge img {
     border-radius: 12px;
 }
+
+.project-link {
+    color: rgb(73, 142, 232);
+    margin-left: 20px;
+}

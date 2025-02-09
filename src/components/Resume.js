@@ -10,7 +10,7 @@ import SkillLevel from "./SkillLevel";
 import ResumeIconLink from "./ResumeIconLink";
 import CustomTimeline from './CustomTimeline';
 
-import { schoolInfo, experienceInfo, skillLevels, skillLevelsMobile, certifications } from '../resumeContent';
+import { schoolInfo, experienceInfo, skillLevels, skillLevelsMobile, certifications, projects } from '../resumeContent';
 
 import rtc from '../images/rtc_outline.png';
 import linkedin from '../images/linkedin.png';
@@ -112,14 +112,14 @@ function Resume() {
                 })
             }
         </div>
-        {/* <h2 className="resume-section-title no-margin-b">AWARDS</h2>
-        {
-            awards.map((el, idx) => 
-                <div style={{marginBottom: 50}} key={idx}>
-                    <Experience key={idx} details={el} />
-                </div>    
-            )
-        } */}
+        <h2 className="resume-section-title no-margin-b">PROJECTS</h2>
+        <CustomTimeline elements={projects.map((el, idx) => (
+            {
+                startTime: el.startDate,
+                endTime: el.endDate,
+                content: <Experience key={`exp-${idx}`} details={el} />
+            }
+        ))} />
         <a id="download-btn" href="https://github.com/AmyWeitzman/resume/raw/master/Weitzman_Amy.pdf" download>
             <FontAwesomeIcon id="download-icon" icon={faDownload} /> <span className='download-resume-text'>Download</span>
         </a>

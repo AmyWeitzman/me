@@ -107,6 +107,14 @@ body, html {
     border: 2px solid rgba(62, 8, 83, 0.5); 
 }
 
+.gray {
+    color: #d3d2d4;
+}
+
+.border-gray {
+    border: 2px solid #d3d2d4;
+}
+
 .page-content {
     margin-top: 125px;
     background-color: black;

@@ -23,7 +23,7 @@ const SKILL_TO_MARKDOWN_BADGE_MAP = {
   "Redux": "![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)",
   "TypeScript": "![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)",
   "Node.js": "![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)",
-  "Vue.js": "![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)",
+  "Vue": "![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)",
   "Jest": "![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)",
   "Jenkins": "![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white)",
   "C++": "![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)",
@@ -33,12 +33,14 @@ const SKILL_TO_MARKDOWN_BADGE_MAP = {
   "GraphQL": "![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)",
   "MongoDB": "![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)",
   "Oracle": "![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)",
-  "Bash": "![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)"
+  "Bash": "![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)",
+  "Twilio": "![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio logoColor=white)",
+  "Flask": "![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)"
 }
 
 function Badge(props) {
   return (
-    props.isMarkdown ? (
+    SKILL_TO_MARKDOWN_BADGE_MAP[props.text] ? (
       <Markdown className='md-skill-badge'>{SKILL_TO_MARKDOWN_BADGE_MAP[props.text]}</Markdown>
     ) : (
       <div className={`badge ${props.color} ${props.bg} border-${props.color}`}>

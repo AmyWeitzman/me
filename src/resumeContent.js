@@ -513,3 +513,249 @@ export const certifications = [
         logo: ec_council_logo
     },
 ];
+
+export const projects = [
+    {
+        jobTitle: "TryHackMe",
+        companyName: "",
+        location: "",
+        startDate: "Oct 2022",
+        endDate: "Dec 2022",
+        skills: ["Cybersecurity", "Linux"],
+        tasks: [
+            "Reviewed 70 hours of cybersecurity training covering red and blue team topics such as network exploitation, privilege escalation, web exploitation, & network defense",
+            "Completed 22 labs for Linux using Burp, Metasploit, Nmap, Wireshark, password cracking tools, & web exploitation techniques, such as cross-site scripting, command & SQL injection, indirect object reference (IDOR), & file inclusion attacks, to exploit 50+ vulnerabilities"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Cybersecurity Virtual Experience Program",
+        companyName: "JPMorgan Chase & Co.",
+        location: "",
+        startDate: "Jul 2022",
+        endDate: "",
+        skills: ["Cybersecurity", "Python"],
+        tasks: [
+            "Analyzed 200K financial transactions using Python script to detect fraud based on transaction source, destination, type, and frequency & developed proof-of-concept for role-based access control (RBAC) system to more securely manage access to sensitive company information"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Cybersecurity Virtual Experience Program",
+        companyName: "SAP",
+        location: "",
+        startDate: "Jul 2022",
+        endDate: "",
+        skills: ["Cybersecurity"],
+        tasks: [
+            "Enhanced security of 10K critical passwords by identifying 5 weaknesses in password requirements & implementing more secure rules while increasing compliance by 40%, & wrote impact analysis report"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Ally",
+        companyName: "https://devpost.com/software/ally-6dc8ge",
+        location: "ShellHacks",
+        startDate: "Sep 2021",
+        endDate: "",
+        skills: ["React", "HTML", "CSS", "JavaScript", "Firebase", "REST APIs"],
+        tasks: [
+            "ShellHacks 2021: Did you know that 3.8 million U.S. adults aged 21-64 are blind or have trouble seeing, even with glasses? Or that more than 466 million people worldwide have a hearing disability? Unfortunately, 98% of the world's top one million websites don't offer full accessibility and 71% of website visitors with disabilities will leave a website that is not accessible. With technology being a prominent feature of everyday life, it is crucial that people develop websites that adhere to accessibility standards and guidelines so that everyone has an opportunity to access content on the web. However, much of the tools and information that is available to help developers ensure that their sites contain the necessary accessibility features is not well known and requires people to use multiple tools. Thus, it is easy for developers to skip this crucial development step. But, since the internet is necessary for everyone's lives, developers should be an ally for the A11Y community. I created a website that eases this process and provides centralized tools and resources for developers to check the accessibility of their site and receive guidance on how to fix the issues. Ally is a web application that helps developers find the accessibility issues in their site and fix them using provided guidance and resources. Ally allows users to create an account and run a scan on their website URL to check against Web Content Accessibility Guideline (WCAG) errors. After the scan, the user will be provided with a report of accessibility errors, categorized by type, along with brief explanations of the specific issues. The categories are color-coded based on how many issues were found in that category to alert the user to areas that need more work than others. The user can also view a breakdown the errors by category to see which categories they are doing better or worse in to guide their future website updates. When the report is generated, the user can also receive an email sent via Courier. If I had more time, I would also include a way for users to view past reports and see metrics about how their site accessibility is improving. Finally, there is a page with a list of resources to help developers fix accessibility issues. Overall, the website includes many accessibility features itself, including contrasting colors, symbols along with text and color, and patterns on the report chart for those who are colorblind. The web app was built using React, Bootstrap, Chart.js, Firebase, the WAVE Web Accessibility API, and the Courier API."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Cybersecurity Virtual Experience Program",
+        companyName: "Genius Armoury",
+        location: "",
+        startDate: "May 2021",
+        endDate: "",
+        skills: ["Cybersecurity", "Linux"],
+        tasks: [
+            "Completed 6-hr intro cyber training covering threats and exploits, networks, forensics, and cyber tools",
+            "Analyzed 4 network traffic logs using Wireshark to identify suspicious activity and potential attacks"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Beach Cleanup",
+        companyName: "https://devpost.com/software/beach-cleanup",
+        location: "BeachHacks",
+        startDate: "Apr 2021",
+        endDate: "",
+        skills: ["Python"],
+        tasks: [
+            "BeachHacks 2021: I wanted to create a game to encourage people to care about the environment and participate in beach cleanups. I developed a game where a player can move around the beach to pick up pieces of trash, such as water bottles, soda cans, and cigarettes. But, the player must avoid obstacles, such as crabs, seagulls, and seaweed. If the player runs into an obstacle, it's game over. The player can also collect seashells, which are worth extra points. Since the images for the trash, obstacles, and seashells aren't exactly rectangular, the default collision function from PyGame wasn't working well for detecting collisions between objects in the game. So I created my own object detection algorithm that takes into account that the boundaries of the object aren't exactly the corners of the image but rather somewhere inside the image. I learned how to use PyGame to create games. I also learned how to add sound effects when the player collects objects."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Daily Water Intake Calculator",
+        companyName: "https://devpost.com/software/daily-water-intake-calculator",
+        location: "HackDartmouth",
+        startDate: "Apr 2021",
+        endDate: "",
+        skills: ["HTML", "CSS", "JavaScript"],
+        tasks: [
+            "HackDartmouth 2021: Often, people aren't drinking enough water throughout the day, which can cause them to become dehydrated and lead to health issues. I decided to make a website that helps people learn how much water they should drink per day to help them stay healthy. I built a website that allows the user to input their weight and the amount of exercise they do per day to calculate how many cups of water they should be drinking per day."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Yoda Mad Libs",
+        companyName: "https://devpost.com/software/yoda-mad-libs",
+        location: "DragonHacks",
+        startDate: "Apr 2021",
+        endDate: "",
+        skills: ["HTML", "CSS", "JavaScript"],
+        tasks: [
+            "DragonHacks 2021: I love doing Mad Libs with people and I wanted to create one with a twist. The stories are translated into Yodish (Yoda Speak). I built a website that allows the user to select 1 of 3 story options and then fill in the requested fields, such as noun, adjective, etc... Then the user can generate the Mad Lib, which displays the final story with the user's words inserted. But, the story is translated into Yodish, which is the way Yoda from Star Wars speaks. I built the website using HTML, CSS, and JavaScript. I also used the FunTranslations Yoda API for the translations."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "English-to-Minion Translator",
+        companyName: "https://devpost.com/software/english-to-minion-translator",
+        location: "hello:world",
+        startDate: "Apr 2021",
+        endDate: "",
+        skills: ["HTML", "CSS", "JavaScript", "REST APIs"],
+        tasks: [
+            "hello:world hackathon 2021: I wanted to create a funny hack and I found an API that translated English phrases to the language of the Minions from Despicable Me. I built the website using HTML, CSS, and JavaScript. I also used the FunTranslations Minion API to perform the translation from English to Minion."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "My Carbon Footprint",
+        companyName: "https://devpost.com/software/my-carbon-footprint",
+        location: "SD Hacks",
+        startDate: "Feb 2021",
+        endDate: "",
+        skills: ["Python", "Flask", "HTML", "CSS", "CockroachDB"],
+        tasks: [
+            "SD Hacks 2021: My project was inspired by this hackathon's sustainability track and emphasis on fighting climate change. The first step to raising awareness about climate change is helping people understand what impact they are having on the environment and how they are individually contributing to climate change. Once people are aware of their impact on the environment, they can take steps to reduce their carbon footprint. Often, people don't know where to start when it comes to fighting climate change. Additionally, many people probably think that fighting climate change takes a massive campaign and requires a lot of time and effort. However, that's not true. There are many simple actions people can take every day to reduce their negative environmental impact. By providing people with suggestions on the little things they can do to make the world a better place, they'll be more likely to do their part. I built a web application that allows a user to input their transportation habits and calculate their carbon footprint. The app displays the user's carbon footprint based on their input and then lists suggestions of simple actions they can take to reduce their carbon footprint."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Emergency Contact Search",
+        companyName: "https://devpost.com/software/emergency-contact-search",
+        location: "FemmeHacks",
+        startDate: "Feb 2021",
+        endDate: "",
+        skills: ["HTML", "CSS", "JavaScript"],
+        tasks: [
+            "FemmeHacks 2021: I wanted to do a hack for social good and with all the global emergencies over the last year, from the pandemic to wildfires, I decided to make a website that would easily provide the contact information of emergency services in your local area. I built the website using HTML, CSS, Bootstrap, and JavaScript. I also got the emergency contact information from the Precisely PSAP API. I am proud of myself for completing a hack that helps benefit the community and make people feel safer and more at ease during these troubling times.I learned how to integrate and API and use authentication. I also learned how to incorporate Bootstrap to make my UI cleaner."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "ZotDiet",
+        companyName: "",
+        location: "",
+        startDate: "Jan 2021",
+        endDate: "Mar 2021",
+        skills: ["React", "HTML", "CSS", "Firebase", "REST APIs", "ML"],
+        tasks: [
+            "Designed & implemented personalized meal recommendation web app on team of 4 using React & Firebase",
+            "Performed natural language processing to standardize data, accelerating meal ranking algorithm 20%"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Wikipedia Races Solver",
+        companyName: "https://github.com/AmyWeitzman/Wikipedia-Races-Solver",
+        location: "",
+        startDate: "Aug 2020",
+        endDate: "",
+        skills: ["Python", "Web Scraping"],
+        tasks: [
+            "When I first found out about Wikipedia Races, they seemed awesome! But, it was tough to find which links to click to get to the end. I wondered, can I build a web scraper to do this? Using Python and Beautiful Soup, I developed a web scraper to parse Wikipedia pages and follow the links to find the destination. NOTE: it is not fast, I tried to honor polite web scraping protocol and added a 3-10 second delay between requests"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Job Board",
+        companyName: "Rewriting the Code (RTC)",
+        location: "",
+        startDate: "Jun 2020",
+        endDate: "Aug 2020",
+        skills: ["Figma"],
+        tasks: [
+            "When my internship for summer 2020 was cancelled at the last minute, I had trouble finding something meaningful to do over the summer to continue building my skills. Fortunately, an organization I am a part of called Rewriting the Code, which supports college women in tech, decided to develop a mini-internship program for those members whose internships were cancelled due to the pandemic. I was placed on the Job Board Data Collection team along with 5 other students. Our task was to design a job board for RTC members to more easily find and track internship and job opportunities from RTC's partner companies and then collect data to give RTC leadership actionable insight into how RTC members are using the job board and how it could be improved. Over the course of the 8 week project, our team developed a Figma prototype of the Job Board Analytics Dashboard that included in-depth, customizable analysis for RTC to review. This project was fun to work on because I learned how to use Figma and got to work with a group of amazing women from all over the country."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Real Life",
+        companyName: "https://github.com/AmyWeitzman/RealLife",
+        location: "",
+        startDate: "May 2020",
+        endDate: "Aug 2020",
+        skills: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
+        tasks: [
+            "I grew up playing the Game of Life, but now that I'm older, I realize how unrealistic much of that game is so I decided to make a more realistic verison called Real Life. Complete with job, house, cars, families, and yearly expenses, the game encompasses much of the different paths, decisions, hardships, and opportunities of real life. Spanning ages 18 to 65, people can choose their path, whether it be going to college (and incurring a lot of debt, of course), joining the military (with great benefits), buying a house and car, having kids, traveling, investing, and much more. You earn (and lose) points for the decisions you make as well as random things life throws at you. The goal of the game is to have the most points at the end. The great thing is that there are so many ways the game could turn out, my family can play it again and again and each game will be unique."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "House Hunt",
+        companyName: "https://github.com/AmyWeitzman/House-Hunt",
+        location: "",
+        startDate: "Apr 2020",
+        endDate: "",
+        skills: ["Python", "React", "HTML", "CSS", "JavaScript","Twilio"],
+        tasks: [
+            "Being stuck at home during the COVID-19 pandemic, playing games so much they became boring, and not being as active outdoors, I decided to make a real-life Scattergories game called House Hunt that my family could play to have fun and stay in shape. Using our phones, we text a phone number to join the game and then receive a text message with a list of categories and a letter. Everyone then runs around the house, searching for objects that fit the category and start with the letter. When we find objects, we take a picture and send it to the phone number. The data is stored and when the game is over, it is fed to a website I built where we can see everyone's results and give out points for unique responses. The back-end and data processing were built with Python and the Twilio API, and the front-end website was built with React, HTML, CSS, and JavaScript. This was project was fun since it was my first time using an API and it was great that my family could play together."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Ivy",
+        companyName: "https://github.com/AmyWeitzman/IvyHacks",
+        location: "",
+        startDate: "Oct 2020",
+        endDate: "",
+        skills: ["IBM Watson", "HTML", "CSS"],
+        tasks: [
+            "Meet Ivy, a mental health chatbot to help users find information about mental illnesses, provide resources such as support groups, and suggest activities to better control their mental health. Mental illness is a major issue facing people today, especially during the pandemic. However, while it is a widespread issue, most people with mental illnesses do not seek treatment, often due to the stigma surrounding it. That's why I decided to build Ivy, a mental health chatbot that you can feel comfortable communicating with and discussing your situation knowing that you won't be judged. Ivy can also suggest resources to help you learn more about your mental illness and ways to overcome it. I built Ivy at IvyHacks, a hackathon hosted by the Ivy League universities, using IBM Watson Assistant. Then I developed a website using HTML and CSS that provides some statistics about mental illnesses to give users a better understanding of the widespread issue and know that they are not alone. Some helpful resources are also listed on the page. The Ivy chatbot on the website can help you with issues including depression, anxiety, stress, PTSD, addiction, ADHD, OCD, eating disorders, and suicidal thoughts. Based on your input, Ivy will send a response with information about your mental illness, resources such as support groups, and activity suggestions to better control your mental health. This project was my first time developing a chatbot and working with IBM Watson Assistant. It was also a great way for me to do critical research about mental illnesses and provide a safe space for people with mental illnesses to express their feelings and seek help."
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Fit Buddy",
+        companyName: "https://github.com/AmyWeitzman/Fit-Buddy",
+        location: "",
+        startDate: "Sep 2020",
+        endDate: "Dec 2020",
+        skills: ["Arduino UNO", "AWS", "PostgreSQL", "Tableau"],
+        tasks: [
+           "To learn more about how hardware and software components work together across the Internet, I decided to take an IoT course, which involved working with an Arduino UNO, sensors, and cloud services. I enjoyed learning about how to work with hardware (I even learned how to solder) and connect wires to different components. For my final project, I built an exercise tracker called Fit Buddy that uses an accelerometer and a wifi module to keep track of the user's exercise time and step count as well as provide analysis to help them improve and reach their goals. The wifi module sends the data collected from the sensors to an AWS EC2 instance and then stores it in a Postgres database. Then, I pull the data into Tableau to create some graphs and give the user insight into how their exercise duration and step count has changed over time and whether they are meeting their goals. This project was a great way to get hands-on experience working with IoT devices and create an interesting, meaningful product"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "At-Home Visual Function Testing Prototype",
+        companyName: "UC Irvine - Undergraduate Research Assistant",
+        location: "",
+        startDate: "Sep 2019",
+        endDate: "Jun 2020",
+        skills: ["Python"],
+        tasks: [
+            "Established novel visual function testing system using Python & Pupil Labs hardware to more comfortably & objectively evaluate patient contrast sensitivity & visual acuity with real-time feedback & 10 custom settings"
+        ],
+        logo: null
+    },
+    {
+        jobTitle: "Jeopardy",
+        companyName: "",
+        location: "",
+        startDate: "Jun 2018",
+        endDate: "Jul 2018",
+        skills: ["Java"],
+        tasks: [
+            "A trivia buff and programming enthusiast whose goal is to one day be able to answer (or rather question) every clue on Jeopardy, I decided to spend one of my summers creating my own Jeopardy game. The design was based on the real Jeopardy TV show, including various categories, multiple rounds, and wagers. However, I also used my creativity to change certain aspects of the game to make it more unique and fun for my entire family. I began by writing the logic behind the game, such as modifying the score, changing the clues, and storing the players' information. One issue I faced was determining what data structures to use to store all the data, which was large and needed to be easily accessible quickly as to not interrupt the flow of the game. I spent much time optimizing the code to make sure that is was as concise and understandable as possible. Once the back-end worked, I made the game come to life by creating the front-end, which consisted of various windows that displayed the game board, the clues, and the rules. Prior to this project, I had no experience in creating GUIs in Java so I had to teach myself the Java Swing Library. After experimenting with the different features and determining the best ones to use for my project, I coded the program, fixing bugs here and there. Ultimately, the game turned out great and I am so proud of my accomplishments. Going in, I had no idea how to build the application, but since I was motivated, I was able to teach myself along the way. Throughout this process, I learned new computer science skills, enhanced my knowledge of programming and the software engineering process, and created a game that my family could play together."
+        ],
+        logo: null
+    },
+]

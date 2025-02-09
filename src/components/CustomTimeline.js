@@ -22,7 +22,7 @@ function CustomTimeline(props) {
                 <>
                     <TimelineItem  key={`timeline-item-${idx}`}>
                         <TimelineOppositeContent className="timeline-timeframe">
-                            {el.startTime} - {el.endTime}
+                            {el.startTime} {el.endTime ? `- ${el.endTime}` : ''}
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
