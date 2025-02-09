@@ -199,3 +199,262 @@ export const experienceInfo = [
         logo: siemens_logo
     }
 ];
+
+export const skillLevels = [
+    {
+        skill1: "Python",
+        level1: 5,
+        skill2: 'HTML',
+        level2: 5
+    },
+    {
+        skill1: 'CSS',
+        level1: 5,
+        skill2: 'JavaScript',
+        level2: 5
+    },
+    {
+        skill1: 'React.js',
+        level1: 5,
+        skill2: 'Git',
+        level2: 5
+    },
+
+    {
+        skill1: 'Jira',
+        level1: 5,
+        skill2: 'Agile',
+        level2: 5
+    },
+    {
+        skill1: 'TypeScript',
+        level1: 4,
+        skill2: 'AWS',
+        level2: 4
+    },
+    {
+        skill1: 'Vue.js',
+        level1: 4,
+        skill2: 'SQL',
+        level2: 4
+    },
+    {
+        skill1: 'PostgreSQL',
+        level1: 4,
+        skill2: 'Firebase',
+        level2: 4
+    },
+    {
+        skill1: 'REST APIs',
+        level1: 4,
+        skill2: 'Node.js',
+        level2: 3
+    },
+    {
+        skill1: 'Java',
+        level1: 3,
+        skill2: 'Redux',
+        level2: 3
+    },
+    {
+        skill1: 'Jenkins',
+        level1: 3,
+        skill2: 'C++',
+        level2: 3
+    },
+    {
+        skill1: 'Postman',
+        level1: 3,
+        skill2: 'Figma',
+        level2: 3
+    },
+    {
+        skill1: 'Tableau',
+        level1: 3,
+        skill2: 'GraphQL',
+        level2: 3
+    },
+    {
+        skill1: 'Machine Learning',
+        level1: 3,
+        skill2: 'Google Cloud',
+        level2: 3
+    },
+    {
+        skill1: 'Azure',
+        level1: 3,
+        skill2: 'Linux',
+        level2: 3
+    },
+    {
+        skill1: 'Docker',
+        level1: 2,
+        skill2: 'Cypress',
+        level2: 2
+    },
+    {
+        skill1: 'Jest',
+        level1: 2,
+        skill2: 'JUnit',
+        level2: 2
+    },
+    {
+        skill1: 'Bash',
+        level1: 2,
+        skill2: 'MongoDB',
+        level2: 2
+    },
+    {
+        skill1: 'Next.js',
+        level1: 1,
+        skill2: 'Tailwind CSS',
+        level2: 1
+    },
+];
+
+export const skillLevelsMobile = [
+    {
+        skill: "Python",
+        level: 5
+    },
+    {
+        skill: 'HTML',
+        level: 5
+    },
+    {
+        skill: 'CSS',
+        level: 5
+    },
+    {
+        skill: 'JavaScript',
+        level: 5
+    },
+    {
+        skill: 'React.js',
+        level: 5
+    },
+    {
+        skill: 'Git',
+        level: 5
+    },
+    {
+        skill: 'Jira',
+        level: 5
+    },
+    {
+        skill: "Agile",
+        level: 5
+    },
+    {
+        skill: 'TypeScript',
+        level: 4
+    },
+    {
+        skill: 'AWS',
+        level: 4
+    },
+    {
+        skill: 'Vue.js',
+        level: 4
+    }, 
+    {
+        skill: 'SQL',
+        level: 4
+    },
+    {
+        skill: 'PostgreSQL',
+        level: 4
+    },
+    {
+        skill: 'Firebase',
+        level: 4
+    },
+    {
+        skill: 'REST APIs',
+        level: 4
+    },
+    {
+        skill: 'Node.js',
+        level: 3
+    },
+    {
+        skill: 'Java',
+        level: 3
+    },
+    {
+        skill: 'Redux',
+        level: 3
+    },
+    {
+        skill: 'Jenkins',
+        level: 3
+    },
+    {
+        skill: 'C++',
+        level: 3
+    },
+    {
+        skill: 'Postman',
+        level: 3
+    },
+    {
+        skill: 'Figma',
+        level: 3
+    },
+    {
+        skill: 'Tableau',
+        level: 3
+    },
+    {
+        skill: 'GraphQL',
+        level: 3
+    },
+    {
+        skill: 'Machine Learning',
+        level: 3
+    },
+    {
+        skill: 'Google Cloud',
+        level: 3
+    },
+    {
+        skill: 'Azure',
+        level: 3
+    },
+    {
+        skill: 'Linux',
+        level: 3
+    },
+    {
+        skill: 'Docker',
+        level: 2
+    },
+    {
+        skill: 'Cypress',
+        level: 2
+    },
+    {
+        skill: 'Jest',
+        level: 2
+    },
+    {
+        skill: 'JUnit',
+        level: 2
+    },
+    {
+        skill: 'Bash',
+        level: 2
+    },
+    {
+        skill: 'MongoDB',
+        level: 1
+    },
+    {
+        skill: 'Next.js',
+        level: 1
+    },
+    {
+        skill: 'Tailwind CSS',
+        level: 1
+    },
+];
