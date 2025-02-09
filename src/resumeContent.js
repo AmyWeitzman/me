@@ -8,6 +8,9 @@ import hkp_logo from './images/hkp_logo.png';
 import propheto_logo from './images/propheto_logo.png';
 import siemens_logo from './images/siemens_logo.png';
 import mella_logo from "./images/mella_logo.png";
+import ec_council_logo from "./images/ec-council_logo.png";
+import comptia_logo from "./images/comptia_logo.png";
+import aws_logo from "./images/aws.png";
 
 export const schoolInfo = [
     {
@@ -310,6 +313,12 @@ export const skillLevels = [
         skill2: 'Tailwind CSS',
         level2: 1
     },
+    {
+        skill1: 'Go',
+        level1: 1,
+        skill2: 'Rust',
+        level2: 1
+    },
 ];
 
 export const skillLevelsMobile = [
@@ -456,5 +465,51 @@ export const skillLevelsMobile = [
     {
         skill: 'Tailwind CSS',
         level: 1
+    },
+    {
+        skill: 'Go',
+        level: 1
+    },
+    {
+        skill: 'Rust',
+        level: 1
+    },
+];
+
+export const certifications = [
+    {
+        name: "AWS Certified Developer - Associate",
+        organization: "Amazon Web Services (AWS)",
+        yearReceived: "Sep 2024",
+        yearExpires: "2027",
+        logo: aws_logo
+    },
+    {
+        name: "AWS Certified Solutions Architect - Associate",
+        organization: "Amazon Web Services (AWS)",
+        yearReceived: "Sep 2024",
+        yearExpires: "2027",
+        logo: aws_logo
+    },
+    {
+        name: "AWS Certified Cloud Practitioner",
+        organization: "Amazon Web Services (AWS)",
+        yearReceived: "Jul 2023",
+        yearExpires: "2027",
+        logo: aws_logo
+    },
+    {
+        name: "Security+",
+        organization: "CompTIA",
+        yearReceived: "Nov 2021",
+        yearExpires: "2027",
+        logo: comptia_logo
+    },
+    {
+        name: "Ethical Hacking Essentials",
+        organization: "EC-Council",
+        yearReceived: "Oct 2022",
+        yearExpires: "2025",
+        logo: ec_council_logo
     },
 ];

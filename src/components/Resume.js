@@ -10,65 +10,12 @@ import SkillLevel from "./SkillLevel";
 import ResumeIconLink from "./ResumeIconLink";
 import CustomTimeline from './CustomTimeline';
 
-import { schoolInfo, experienceInfo, skillLevels, skillLevelsMobile } from '../resumeContent';
+import { schoolInfo, experienceInfo, skillLevels, skillLevelsMobile, certifications } from '../resumeContent';
 
 import rtc from '../images/rtc_outline.png';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import devpost_logo from '../images/devpost_logo.png';
-import ec_council_logo from "../images/ec-council_logo.png";
-import neo4j_logo from "../images/neo4j_logo.png";
-import comptia_logo from "../images/comptia_logo.png";
-import tableau_logo from "../images/tableau_logo.png";
-import codepath_logo from "../images/codepath_logo.png";
-
-const certificates = [
-    {
-        jobTitle: "Ethical Hacking Essentials",
-        companyName: "EC-Council",
-        location: "",
-        years: "Nov 2022",
-        skills: [],
-        tasks: [],
-        logo: ec_council_logo
-    },
-    {
-        jobTitle: "Neo4j",
-        companyName: "Neo4j",
-        location: "",
-        years: "Aug 2022",
-        skills: [],
-        tasks: [],
-        logo: neo4j_logo
-    },
-    {
-        jobTitle: "Security+",
-        companyName: "CompTIA",
-        location: "",
-        years: "Nov 2021",
-        skills: [],
-        tasks: [],
-        logo: comptia_logo
-    },
-    {
-        jobTitle: "Tableau",
-        companyName: "Tableau",
-        location: "",
-        years: "Mar 2021",
-        skills: [],
-        tasks: [],
-        logo: tableau_logo
-    },
-    {
-        jobTitle: "CodePath Cybersecurity",
-        companyName: "CodePath",
-        location: "",
-        years: "Mar 2021",
-        skills: [],
-        tasks: [],
-        logo: codepath_logo
-    },
-];
 
 function Resume() {
   return (
@@ -150,14 +97,21 @@ function Resume() {
                 }
             </tbody>
         </table>
-        <h2 className="resume-section-title no-margin-b">CERTIFICATES</h2>
-        {
-            certificates.map((el, idx) => 
-                <div style={{marginBottom: 50}} key={idx}>
-                    <Experience key={idx} details={el} />
-                </div>    
-            )
-        }
+        <h2 className="resume-section-title no-margin-b">CERTIFICATIONS</h2>
+        <div className="certs-grid-container">
+            {
+                certifications.map((cert, idx) => {
+                    return (
+                        <div key={idx} className="certs-grid-item">
+                            <img src={cert.logo} alt={cert.organization + " logo"} className="cert-logo"></img>
+                            <h3 className='cert-name'>{cert.name}</h3>
+                            <p className='cert-org'>{cert.organization}</p>
+                            <p className='cert-years'>{cert.yearReceived} - {cert.yearExpires}</p>
+                        </div>
+                    );
+                })
+            }
+        </div>
         {/* <h2 className="resume-section-title no-margin-b">AWARDS</h2>
         {
             awards.map((el, idx) => 
