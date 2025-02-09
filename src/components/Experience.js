@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.css';
 import './Experience.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,14 +8,17 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Tooltip from '@mui/material/Tooltip';
 
 import Badge from "./Badge";
 
 function Experience(props) {
+    const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    <Accordion className='experience-accordion'>
+    <Accordion className='experience-accordion' expanded={isExpanded} onChange={() => setIsExpanded(!isExpanded)}>
         <AccordionSummary
-            expandIcon={<ExpandMoreIcon className='experience-accordion-toggle-icon' />}
+            expandIcon={<Tooltip title={`${isExpanded ? 'Hide' : 'Show'} Details`}><ExpandMoreIcon className='experience-accordion-toggle-icon' /></Tooltip>}
             aria-controls="experience-content"
             className='experience-accordion-header'
         >
