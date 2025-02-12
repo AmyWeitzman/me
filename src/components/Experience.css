@@ -1,3 +1,8 @@
+.experience-container {
+    border-radius: 20px;
+    margin: 8px 0px;
+}
+
 .MuiAccordion-root {
     background-color: transparent !important;
 }
@@ -21,22 +26,34 @@
     float: left;
 }
 
+.logo-sm {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-lg {
+    width: 120px;
+    height: 120px;
+}
+
 .experience-info-container {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-gap: 1px;
+    width: 100%;
 }
 
 .experience-info-item-header {
-    display: flex;
-    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 20px;
 }
 
 .experience-info-item {
-    margin-left: 20px;
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .job-title {
@@ -44,14 +61,20 @@
     justify-self: start;
 }
 
+.experience-info-item-dates {
+    font-size: 1.25rem;
+    margin: 0 10px;
+}
+
 .task-container {
     margin: 25px 20px;
     background-color: transparent;
-    border-radius: 20px;
-    box-shadow: 0 0 10px var(--theme-gray);
     padding: 10px;
     display: flex;
     flex-direction: row;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .task-bullet-icon {

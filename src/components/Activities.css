@@ -1,18 +1,11 @@
 .activities-content {
     color: var(--theme-gray);
     margin: 50px 20%;
-    text-align: center; 
 }
 
 .divider-line {
     border: none;
     border-top: 2px dotted rgba(211, 210, 212, 0.5);
-}
-
-.activity {
-    border-radius: 25px;
-    padding: 25px;
-    margin-bottom: 30px;
 }
 
 @media (max-width: 800px) { 

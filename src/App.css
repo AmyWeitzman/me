@@ -127,3 +127,8 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.page-section-title {
+    text-align: left;
+    margin-top: 40px;
+}

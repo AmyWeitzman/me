@@ -30,11 +30,6 @@
     text-shadow: 0 0 1px var(--theme-gray);
 }
 
-.resume-section-title {
-    text-align: left;
-    margin-top: 40px;
-}
-
 .no-margin-b {
     margin-bottom: 0;
 }

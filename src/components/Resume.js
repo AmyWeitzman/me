@@ -12,7 +12,6 @@ import CustomTimeline from './CustomTimeline';
 
 import { schoolInfo, experienceInfo, skillLevels, skillLevelsMobile, certifications, projects } from '../resumeContent';
 
-import rtc from '../images/rtc_outline.png';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import devpost_logo from '../images/devpost_logo.png';
@@ -52,7 +51,7 @@ function Resume() {
                 />
             </span>
         </Tooltip>
-        <h2 className="resume-section-title">EDUCATION</h2>
+        <h2 className="resume-section-title page-section-title">EDUCATION</h2>
         <CustomTimeline elements={schoolInfo.map((el, idx) => (
             {
                 startTime: el.startYear,
@@ -61,15 +60,15 @@ function Resume() {
             }
         ))} />
         <br></br>
-        <h2 className="resume-section-title no-margin-b">EXPERIENCE</h2>
+        <h2 className="resume-section-title no-margin-b page-section-title">EXPERIENCE</h2>
         <CustomTimeline elements={experienceInfo.map((el, idx) => (
             {
                 startTime: el.startDate,
                 endTime: el.endDate,
-                content: <Experience key={`exp-${idx}`} details={el} />
+                content: <Experience key={`exp-${idx}`} details={el} logoSize="lg" />
             }
         ))} />
-        <h2 className="resume-section-title no-margin-b">SKILLS</h2>
+        <h2 className="resume-section-title no-margin-b page-section-title">SKILLS</h2>
         <table id="skills-table">
             <tbody>
                 {
@@ -97,7 +96,7 @@ function Resume() {
                 }
             </tbody>
         </table>
-        <h2 className="resume-section-title no-margin-b">CERTIFICATIONS</h2>
+        <h2 className="resume-section-title no-margin-b page-section-title">CERTIFICATIONS</h2>
         <div className="certs-grid-container">
             {
                 certifications.map((cert, idx) => {
@@ -112,12 +111,12 @@ function Resume() {
                 })
             }
         </div>
-        <h2 className="resume-section-title no-margin-b">PROJECTS</h2>
+        <h2 className="resume-section-title no-margin-b page-section-title">PROJECTS</h2>
         <CustomTimeline elements={projects.map((el, idx) => (
             {
                 startTime: el.startDate,
                 endTime: el.endDate,
-                content: <Experience key={`exp-${idx}`} details={el} />
+                content: <Experience key={`exp-${idx}`} details={el} logoSize="lg" />
             }
         ))} />
         <a id="download-btn" href="https://docs.google.com/document/d/1y0NEipN5VtPHLi9XaYeCIJUqzGe0XDAAofJnFoR8Enc/edit?usp=sharing" target="_blank">
