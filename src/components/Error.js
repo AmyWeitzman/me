@@ -6,7 +6,7 @@ function Error() {
   return (
     <div className="content">
         <br></br>
-        <h3 id="error-msg">Sorry, there was an error loading the page :(</h3>
+        <h3 id="error-msg">¯\_(ツ)_/¯ <br></br> Page not found</h3>
     </div>
   );
 }
