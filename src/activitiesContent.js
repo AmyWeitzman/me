@@ -67,7 +67,7 @@ export const volunteering = [
         endDate: "Present",
         skills: [],
         tasks: [
-            "Prepare and serve meals to 100+ homeless people in DC twice a month"
+            "Prepare and serve well-balanced, nutritious meals for 100+ homeless people in DC twice a month"
         ],
         logo: miriams_kitchen
     },
