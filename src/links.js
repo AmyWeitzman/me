@@ -10,9 +10,5 @@ export const NavLinks = {
   "Activities": {
     "name": "Activities",
     "path": "/activities"
-  },
-  "Contact": {
-    "name": "Contact",
-    "path": "/contact"
   }
 }

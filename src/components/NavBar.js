@@ -22,7 +22,6 @@ function NavBar() {
             <NavBarLink linkTo={"About"} icon={faHouseChimney} />
             <NavBarLink linkTo={"Resume"} icon={faCode} />
             <NavBarLink linkTo={"Activities"} icon={faFootball} />
-            <NavBarLink linkTo={"Contact"} icon={faEnvelope} />
         </nav>
         <div id="mobile-nav-dropdown">
             <div id="dropdown-icon-container"><FontAwesomeIcon id="dropdown-icon" icon={faBars} onClick={toggleMenu} className='' /></div>
@@ -38,9 +37,6 @@ function NavBar() {
                   </li>
                   <li onClick={toggleMenu} className="nav-item">
                     <NavBarLink linkTo={"Activities"} />
-                  </li>
-                  <li onClick={toggleMenu} className="nav-item">
-                    <NavBarLink linkTo={"Contact"} />
                   </li>
                 </ul> 
               </div>
