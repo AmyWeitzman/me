@@ -16,6 +16,8 @@ import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
 import devpost_logo from '../images/devpost_logo.png';
 
+const RESUME_LINK = 'https://docs.google.com/document/d/1y0NEipN5VtPHLi9XaYeCIJUqzGe0XDAAofJnFoR8Enc/edit?usp=sharing';
+
 function Resume() {
   return (
     <div className="resume-content">
@@ -50,6 +52,11 @@ function Resume() {
                     altText="Devpost"
                 />
             </span>
+        </Tooltip>
+        <Tooltip title="Download Resume">
+            <a className="resume-download-btn resume-icon-link" href={RESUME_LINK} target="_blank">
+                <FontAwesomeIcon className="resume-download-icon" icon={faDownload} />
+            </a>
         </Tooltip>
         <h2 className="resume-section-title page-section-title">EDUCATION</h2>
         <CustomTimeline elements={schoolInfo.map((el, idx) => (
@@ -119,9 +126,11 @@ function Resume() {
                 content: <Experience key={`exp-${idx}`} details={el} logoSize="lg" />
             }
         ))} />
-        <a id="download-btn" href="https://docs.google.com/document/d/1y0NEipN5VtPHLi9XaYeCIJUqzGe0XDAAofJnFoR8Enc/edit?usp=sharing" target="_blank">
-            <FontAwesomeIcon id="download-icon" icon={faDownload} /> <span className='download-resume-text'>Download Resume</span>
-        </a>
+        <div className='resume-download-container'>
+            <a className="resume-download-btn" href={RESUME_LINK} target="_blank">
+                <FontAwesomeIcon className="resume-download-icon" icon={faDownload} /> <span className='download-resume-text'>Download Resume</span>
+            </a>
+        </div>
     </div>
   );
 }

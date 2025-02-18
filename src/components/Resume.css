@@ -39,15 +39,22 @@
     width: 100%;
 }
 
-#download-btn {
-    color: var(--theme-gray);
-    font-size: 30px;
-    text-decoration: none;
+.resume-download-container {
     padding-bottom: 50px;
 }
 
-#download-btn:hover .download-resume-text {
+.resume-download-btn {
+    color: var(--theme-gray);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.resume-download-btn:hover .download-resume-text {
     border-bottom: 2px solid white;
+}
+
+.resume-icon-link {
+    margin-left: 20px;
 }
 
 #linkedin-icon {
