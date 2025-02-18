@@ -15,7 +15,7 @@ function App() {
                 <NavBar />
                 <div className="page-content">
                     <Routes>
-                        <Route exact path='/' element={<Home />}></Route>
+                        <Route exact path='/me' element={<Home />}></Route>
                         <Route exact path='/resume' element={<Resume />}></Route>
                         <Route exact path='/activities' element={<Activities />}></Route>
                         <Route path='*' element={<Error />}></Route>
