@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import './Badge.css';
 
 import Markdown from 'react-markdown'

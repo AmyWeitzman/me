@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-import Resume from "./components/Resume";
-import Activities from "./components/Activities";
+import Resume from "./components/Resume/Resume.js";
+import Activities from "./components/Activities/Activities.js";
 import Error from "./components/Error";
 
 function App() {

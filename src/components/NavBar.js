@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faHouseChimney, faCode, faFootball, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHouseChimney, faCode, faFootball } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 import NavBarLink from './NavBarLink';

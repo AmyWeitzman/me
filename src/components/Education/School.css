@@ -1,0 +1,28 @@
+.education-school-section {
+    display: flex;
+}
+
+.school-logo {
+    width: 120px;
+    height: 120px;
+    justify-self: start;
+}
+
+.edu-info-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1px;
+    height: 5px;
+    padding-right: 20px;
+}
+
+.edu-info-item {
+    margin-left: 20px;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.school-name{
+    font-weight: bold;
+}

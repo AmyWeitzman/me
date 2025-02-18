@@ -92,3 +92,25 @@
     font-weight: bold;
     margin: 10px;
 }
+
+#terminal-response-container {
+    display: flex;
+    width: 100%;
+}
+
+#terminal-response-right {
+    width: 50%; 
+}
+
+#terminal-response-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#terminal-headshot {
+    height: 25rem;
+    border: 5px solid var(--theme-gray);
+    border-radius: 50%;;
+}

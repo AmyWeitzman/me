@@ -30,15 +30,6 @@
     text-shadow: 0 0 1px var(--theme-gray);
 }
 
-.no-margin-b {
-    margin-bottom: 0;
-}
-
-#skills-table {
-    margin-right: 0;
-    width: 100%;
-}
-
 .resume-download-container {
     padding-bottom: 50px;
 }
@@ -72,29 +63,7 @@
     margin-left: 15px;
 }
 
-.certs-grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px; 
-}
 
-.certs-grid-item {
-    padding: 20px;
-    text-align: left;
-}
-
-.cert-logo {
-    width: 120px;
-    height: 120px;
-    justify-self: start;
-    float: left;
-}
-
-.cert-name, .cert-org, .cert-years {
-    font-size: 1.25rem;
-    margin: 0;
-    margin-left: 140px;
-}
 
 .hover-grow {
     transition: transform .2s; 
@@ -102,10 +71,6 @@
 
 .hover-grow:hover {
     transform: scale(1.1);
-}
-
-#skills-table-mobile {
-    display: none;
 }
 
 @media (max-width: 800px) { 
@@ -116,10 +81,6 @@
 
     #skills-table {
         display: none;
-    }
-
-    #skills-table-mobile {
-        display: block;
     }
 
     .full-width {

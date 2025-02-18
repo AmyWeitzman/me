@@ -1,7 +1,8 @@
 import React from 'react';
-import '../App.css';
 import './Education.css';
+import School from './School';
 import Course from './Course';
+import Scholarship from './Scholarship';
 
 function Education(props) {
   const EDU_IDX = props.eduIdx;
@@ -11,24 +12,25 @@ function Education(props) {
     <div className="edu-container">
       <div className='edu-school-info'>
         <div className='edu-school-info-top'>
-            <img src={props.details.logo} alt={props.details.name + " logo"} className="school-logo"></img>
-            <div className="edu-info-container">
-              <p className="school-name edu-info-item">{props.details.name}</p>
-              <p className="degree-type edu-info-item">{props.details.degreeType} in {props.details.major}</p>
-              { 
-                props.details.additionalInfo.map(item => <p className="additional-info-item edu-info-item">{item}</p>)
-              }
-            </div>
+          <School 
+            logo={props.details.logo}
+            name={props.details.name}
+            degreeType={props.details.degreeType}
+            major={props.details.major}
+            additionalInfo={props.details.additionalInfo}
+          />
         </div>
         { props.details.scholarships.length > 0 &&
           <div className='edu-scholarships-container'>
             <p className='scholarships-header'>Scholarships</p>
             {
               props.details.scholarships.map((scholarship, idx) => (
-                <div className='scholarship-item'>
-                  <img className="scholarship-logo" src={scholarship.logo} alt={`${scholarship.title}-logo`}></img>
-                  <p key={idx} className="scholarship-title">{scholarship.title}</p>
-                </div>
+                <Scholarship 
+                  key={idx}
+                  idx={idx} 
+                  logo={scholarship.logo} 
+                  title={scholarship.title} 
+                />
               ))
             }
           </div>
