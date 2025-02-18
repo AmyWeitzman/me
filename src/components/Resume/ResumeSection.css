@@ -1,0 +1,28 @@
+#skills-table {
+    margin-right: 0;
+    width: 100%;
+}
+
+.certs-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+}
+
+.certs-grid-item {
+    padding: 20px;
+    text-align: left;
+}
+
+.cert-logo {
+    width: 120px;
+    height: 120px;
+    justify-self: start;
+    float: left;
+}
+
+.cert-name, .cert-org, .cert-years {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-left: 140px;
+}

@@ -1,0 +1,93 @@
+.resume-content {
+    color: var(--theme-gray);
+    margin: 20px 15%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1900px) {
+    .resume-content {
+        margin: 20px 10%;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .resume-content {
+        margin: 20px 5%;
+    }
+}
+
+#swe-tagline {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: var(--theme-green);
+}
+
+#traits-tagline {
+    font-size: 1.5rem;
+    color: var(--theme-purple);
+    margin-top: 2px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 1px var(--theme-gray);
+}
+
+.resume-download-container {
+    padding-bottom: 50px;
+}
+
+.resume-download-btn {
+    color: var(--theme-gray);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.resume-download-btn:hover .download-resume-text {
+    border-bottom: 2px solid white;
+}
+
+.resume-icon-link {
+    margin-left: 20px;
+}
+
+#linkedin-icon {
+    margin-right: 15px;
+}
+
+#github-profile-icon {
+    background-color: var(--theme-gray);
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#devpost-profile-icon {
+    margin-left: 15px;
+}
+
+
+
+.hover-grow {
+    transition: transform .2s; 
+}
+
+.hover-grow:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) { 
+    .resume-content {
+        margin: 20px 5%;
+        overflow: auto;
+    }
+
+    #skills-table {
+        display: none;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}
+
+.download-resume-text {
+    font-size: 1.5rem;
+}

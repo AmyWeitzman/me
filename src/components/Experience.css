@@ -1,34 +1,59 @@
 .experience-container {
-    color: var(--theme-gray);
-    text-align: left;
-    padding-left: 10px;
-    display: inline;
+    border-radius: 20px;
+    margin: 8px 0px;
+}
+
+.MuiAccordion-root {
+    background-color: transparent !important;
+}
+
+.MuiAccordion-root , .MuiSvgIcon-root {
+    color: var(--theme-gray) !important;
+}
+
+.experience-accordion-header, .experience-info-item {
+    font-family: var(--theme-font);
+}
+
+.experience-accordion-toggle-icon {
+    font-size: 2.5rem !important;
 }
 
 .company-logo {
-    width: 12%;
-    min-width: 100px;
+    width: 120px;
+    height: 120px;
     justify-self: start;
     float: left;
-    margin-top: 20px;
+}
+
+.logo-sm {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-lg {
+    width: 120px;
+    height: 120px;
 }
 
 .experience-info-container {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-gap: 1px;
+    width: 100%;
+}
+
+.experience-info-item-header {
+    margin-bottom: 8px;
+    margin-left: 20px;
 }
 
 .experience-info-item {
-    margin-left: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-
-.title-years-row {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .job-title {
@@ -36,28 +61,35 @@
     justify-self: start;
 }
 
-.location {
-    font-style: italic;
+.experience-info-item-dates {
+    font-size: 1.25rem;
+    margin: 0 10px;
 }
 
-.task-list {
-    margin-top: 0;
+.task-container {
+    margin: 25px 20px;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.task-bullet-icon {
+    margin: 5px;
+    color: var(--theme-green);
+    font-size: 1.5rem;
 }
 
 .task {
-    margin-left: 20px;
-}
-
-.years {
-    justify-self: end;
-    font-style: italic;
+    margin: 0 10px;
 }
 
 .skill-list {
     display: flex;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 40px;
+    margin-left: 10px;
     flex-wrap: wrap;
 }
 
@@ -67,3 +99,16 @@
     }
 }
 
+.md-skill-badge p {
+    margin: 5px;
+    padding: 0 5px;
+}
+
+.md-skill-badge img {
+    border-radius: 12px;
+}
+
+.project-link {
+    color: rgb(73, 142, 232);
+    margin-left: 20px;
+}

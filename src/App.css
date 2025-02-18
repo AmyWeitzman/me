@@ -1,15 +1,16 @@
 /* global variables */
 :root {
-    --theme-purple: #9034c7;
-    --theme-green: #39ff14;
+    --theme-purple: #8234c7;
+    --theme-green: #1CD92F;
     --theme-gray: #d3d2d4;
-    --theme-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --theme-font: "Klee One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body, html {
     background-color: black;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: var(--theme-font);
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 .box-shadow {
@@ -107,6 +108,27 @@ body, html {
     border: 2px solid rgba(62, 8, 83, 0.5); 
 }
 
+.gray {
+    color: #d3d2d4;
+}
+
+.border-gray {
+    border: 2px solid #d3d2d4;
+}
+
 .page-content {
-    margin-top: 100px;
+    margin-top: 125px;
+    background-color: black;
+}
+
+.page-content:has(.home-content) {
+    background-image: url('./images/space.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-section-title {
+    text-align: left;
+    margin-top: 40px;
 }

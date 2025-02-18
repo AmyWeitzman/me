@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import './Home.css';
 
+import headshot from '../images/headshot.png';
+
 import figlet from 'figlet';
 import standardFont from 'figlet/importable-fonts/Standard.js';
 figlet.parseFont('Standard', standardFont);
@@ -57,12 +59,23 @@ function Home() {
     return (
         <div className="home-content">
             <div id="terminal" className="box-shadow">
-                <h3 id="hello-world" className="terminal-text">&#62;_</h3>
-                <p id="terminal-command" className="terminal-text"></p>
-                <pre id="terminal-figlet" className='terminal-text'>{figletText}</pre>
-                <p id="terminal-response" className="terminal-text hidden">
-                    {'{\n  "traits": {\n    "Passionate",\n    "Creative",\n    "Curious"\n  },\n  "skills": {\n    "Software Engineering",\n    "Data Science",\n    "Cybersecurity"\n  },\n  "interests": [\n    "Coding",\n    "Sports",\n    "Music",\n    "Astronomy",\n    "Trivia",\n    "Food"\n  ]\n}'}
-                </p>
+                <div id="terminal-content-container">
+                    <h3 id="hello-world" className="terminal-text">&#62;_</h3>
+                    <p id="terminal-command" className="terminal-text"></p>
+                    <div id="terminal-response-container">
+                        <div id="terminal-response-left">
+                            <pre id="terminal-figlet" className='terminal-text'>{figletText}</pre>
+                            <p id="terminal-response" className="terminal-text hidden">
+                                {'{\n  "traits": {\n    "Passionate",\n    "Creative",\n    "Curious"\n  },\n  "skills": {\n    "Software Engineering",\n    "Data Science",\n    "Cybersecurity"\n  },\n  "interests": [\n    "Coding",\n    "Sports",\n    "Music",\n    "Astronomy",\n    "Trivia",\n    "Food"\n  ]\n}'}
+                            </p>
+                        </div>
+                        <div id="terminal-response-right">
+                            { done &&
+                                <img id="terminal-headshot" src={headshot} alt='Headshot of Amy Weitzman' />
+                            }
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

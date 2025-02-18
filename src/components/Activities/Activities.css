@@ -1,0 +1,11 @@
+.activities-content {
+    color: var(--theme-gray);
+    margin: 50px 20%;
+}
+
+@media (max-width: 800px) { 
+    .activities-content {
+        margin: 50px 5%;
+        overflow: auto;
+    }
+}

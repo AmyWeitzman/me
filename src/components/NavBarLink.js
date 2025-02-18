@@ -1,12 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavLinks } from "../links";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "./NavBar.css";
 
-function NavBarLink({ linkTo }) {
+function NavBarLink({ linkTo, icon }) {
   const linkInfo = NavLinks[linkTo];
 
   return (
-    <NavLink to={linkInfo["path"]} className="nav-link" activeClassName="cur-link">{linkInfo["name"]}</NavLink>
+    <NavLink to={linkInfo["path"]} className={({ isActive }) => isActive ? "cur-link" : "nav-link"}>
+      <FontAwesomeIcon className="nav-icon" icon={icon} /> <span className='nav-link-text'>{linkInfo["name"]}</span>
+    </NavLink>
   );
 }
 
