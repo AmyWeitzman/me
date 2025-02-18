@@ -10,7 +10,7 @@ import ResumeIconLink from "./ResumeIconLink";
 import CustomTimeline from '../CustomTimeline.js';
 import ResumeSection from './ResumeSection.js';
 
-import { schoolInfo, experienceInfo, skillLevels, skillLevelsMobile, certifications, projects } from '../../resumeContent.js';
+import { schoolInfo, experienceInfo, skillLevels, certifications, projects } from '../../resumeContent.js';
 
 import linkedin from '../../images/linkedin.png';
 import github from '../../images/github.png';
