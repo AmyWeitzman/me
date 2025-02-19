@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.f886d539.css",
-    "main.js": "/static/js/main.3ba8df55.js",
-    "static/media/headshot.png": "/static/media/headshot.5d38671d1a9d664c85e5.png",
-    "static/media/space.gif": "/static/media/space.cc8f0ffc26428e4bf734.gif",
-    "static/media/dod.png": "/static/media/dod.ff3e2dc56301b8fb13cf.png",
-    "static/media/uci_logo.png": "/static/media/uci_logo.69e9c05b815f362468d7.png",
-    "static/media/bridges_to_independence.png": "/static/media/bridges_to_independence.cb3dc33e08a498162c68.png",
-    "static/media/afac.png": "/static/media/afac.7a07f9eeda0b44aa2987.png",
-    "static/media/mella_logo.png": "/static/media/mella_logo.78296ad8967dbc0b4801.png",
-    "static/media/hkp_logo.png": "/static/media/hkp_logo.4774cf874ac9bc5b216e.png",
-    "static/media/rtc_outline.png": "/static/media/rtc_outline.041a8a9d80af9f4ff2ef.png",
-    "static/media/awt.png": "/static/media/awt.0729ba14c798e0386e2c.png",
-    "static/media/codepath_logo.png": "/static/media/codepath_logo.89ad25c5df1375ee71a7.png",
-    "static/media/ec-council_logo.png": "/static/media/ec-council_logo.13e2dcde6137837f7cdd.png",
-    "static/media/miriams_kitchen.png": "/static/media/miriams_kitchen.54afe9696a6d24d2ddeb.png",
-    "index.html": "/index.html",
-    "main.f886d539.css.map": "/static/css/main.f886d539.css.map",
-    "main.3ba8df55.js.map": "/static/js/main.3ba8df55.js.map"
+    "main.css": "/me/static/css/main.f3c967b7.css",
+    "main.js": "/me/static/js/main.fb616e94.js",
+    "static/media/headshot.png": "/me/static/media/headshot.5d38671d1a9d664c85e5.png",
+    "static/media/space.gif": "/me/static/media/space.cc8f0ffc26428e4bf734.gif",
+    "static/media/dod.png": "/me/static/media/dod.ff3e2dc56301b8fb13cf.png",
+    "static/media/uci_logo.png": "/me/static/media/uci_logo.69e9c05b815f362468d7.png",
+    "static/media/bridges_to_independence.png": "/me/static/media/bridges_to_independence.cb3dc33e08a498162c68.png",
+    "static/media/afac.png": "/me/static/media/afac.7a07f9eeda0b44aa2987.png",
+    "static/media/mella_logo.png": "/me/static/media/mella_logo.78296ad8967dbc0b4801.png",
+    "static/media/hkp_logo.png": "/me/static/media/hkp_logo.4774cf874ac9bc5b216e.png",
+    "static/media/rtc_outline.png": "/me/static/media/rtc_outline.041a8a9d80af9f4ff2ef.png",
+    "static/media/awt.png": "/me/static/media/awt.0729ba14c798e0386e2c.png",
+    "static/media/codepath_logo.png": "/me/static/media/codepath_logo.89ad25c5df1375ee71a7.png",
+    "static/media/ec-council_logo.png": "/me/static/media/ec-council_logo.13e2dcde6137837f7cdd.png",
+    "static/media/miriams_kitchen.png": "/me/static/media/miriams_kitchen.54afe9696a6d24d2ddeb.png",
+    "index.html": "/me/index.html",
+    "main.f3c967b7.css.map": "/me/static/css/main.f3c967b7.css.map",
+    "main.fb616e94.js.map": "/me/static/js/main.fb616e94.js.map"
   },
   "entrypoints": [
-    "static/css/main.f886d539.css",
-    "static/js/main.3ba8df55.js"
+    "static/css/main.f3c967b7.css",
+    "static/js/main.fb616e94.js"
   ]
 }
