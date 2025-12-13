@@ -1,6 +1,7 @@
 import { faChartDiagram, faLaptopCode, faBrain, faServer, faShield, faAtom } from '@fortawesome/free-solid-svg-icons';
 
 import uci_logo from './images/uci_logo.png';
+import black_cape_logo from './images/black_cape_logo.png';
 import dod_logo from './images/dod.png';
 import awt from './images/awt.png';
 import behaivior_logo from './images/behaivior_logo.png';
@@ -70,6 +71,22 @@ export const schoolInfo = [
 ];
 
 export const experienceInfo = [
+    {
+        jobTitle: "Technologist",
+        companyName: "Black Cape",
+        location: "Arlington, VA",
+        startDate: "Jun 2025",
+        endDate: "Present",
+        skills: ["Python", "ML", "GenAI", "Flask", "Databricks", "AWS", "GCP", "Git", "Jira", "Agile"],
+        tasks: [
+            "Developed Slack App using Python, Slack API, AWS Lambda, AWS API Gateway, AWS Dynamo DB, AWS EventBridge Schedule, and AWS CloudWatch so users could be notified when certain people come online to enhance collaboration across the company",
+            "Deployed workflow using GitLab CI/CD that parses company's certification tracking spreadsheet upon update via Google Apps Script and then auto-updates certification study guides in Confluence with a list of people who have obtained that certification so those studying for a certain certification exam can find tutors",
+            "Led team of 5 to develop automated solution using Python, Databricks, and Qlik that integrates disparate data sources in central location, parses data and creates tables with information needed for annual military equipment report, and deploys Qlik dashboard to display real-time data, reducing time to compile data and create report from 3 mo to 1 hr",
+            "Implemented Retrieval Augmented Generation (RAG) capability end-to-end using Python, Jupyter Notebook, vector databases (Chroma, Qdrant), LangChain, Haystack, Ollama, and LM Studio by iteratively developing prototypes, creating custom pipeline components, optimizing performance and accuracy by performing prompt engineering, evaluation, and caching, and building basic chat user interface, enabling users to query 700+ page government policy using natural language to conduct compliance reviews 8x faster than previous manual process",
+            "Built data ingest pipeline using Python, Pandas, PySpark, Jupyter Notebook, and Databricks by defining schemas, parsing Excel file containing 3 sheets with 7 tables, cleaning data to standardize column types and values, and saving data into Delta tables"
+        ],
+        logo: black_cape_logo
+    },
     {
         jobTitle: "IT Specialist",
         companyName: "Federal Government",
