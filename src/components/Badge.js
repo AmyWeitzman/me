@@ -34,8 +34,11 @@ const SKILL_TO_MARKDOWN_BADGE_MAP = {
   "Oracle": "![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)",
   "Bash": "![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)",
   "Twilio": "![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio&logoColor=white)",
-  "Flask": "![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)"
-}
+  "Flask": "![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)",
+  "GCP": "![Google Cloud Badge](https://img.shields.io/badge/Google%20Cloud-4285F4?logo=googlecloud&style=for-the-badge&logoColor=fff)",
+  "Databricks": "![Databricks](https://img.shields.io/badge/Databricks-%23FF6F00.svg?style=for-the-badge&logo=databricks&logoColor=white)",
+  "GenAI": "![GenAI](https://img.shields.io/badge/GenAI-%23039BE5.svg?style=for-the-badge&logo=artificial-intelligence&logoColor=white)"
+} 
 
 function Badge(props) {
   return (
