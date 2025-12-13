@@ -255,9 +255,15 @@ export const skillLevels = [
         level2: 4
     },
     {
-        skill1: 'Vue.js',
+        skill1: 'Google Cloud',
         level1: 4,
         skill2: 'SQL',
+        level2: 4
+    },
+    {
+        skill1: 'Vue.js',
+        level1: 4,
+        skill2: 'Flask',
         level2: 4
     },
     {
@@ -299,25 +305,25 @@ export const skillLevels = [
     {
         skill1: 'Machine Learning',
         level1: 3,
-        skill2: 'Google Cloud',
-        level2: 3
+        skill2: 'Azure',
+        level2: 3,
     },
     {
-        skill1: 'Azure',
+        skill1: 'Linux',
         level1: 3,
-        skill2: 'Linux',
-        level2: 3
+        skill2: 'Docker',
+        level2: 2,
     },
     {
-        skill1: 'Docker',
+        skill1: 'Cypress',
         level1: 2,
-        skill2: 'Cypress',
-        level2: 2
+        skill2: 'Jest',
+        level2: 2,
     },
     {
-        skill1: 'Jest',
+        skill1: 'JUnit',
         level1: 2,
-        skill2: 'JUnit',
+        skill2: 'Svelte',
         level2: 2
     },
     {
