@@ -12,6 +12,8 @@ import mella_logo from "./images/mella_logo.png";
 import ec_council_logo from "./images/ec-council_logo.png";
 import comptia_logo from "./images/comptia_logo.png";
 import aws_logo from "./images/aws.png";
+import gcp_logo from "./images/gcp_logo.png";
+import ms_azure_logo from "./images/ms_azure_logo.png";
 
 export const schoolInfo = [
     {
@@ -352,6 +354,27 @@ export const certifications = [
         yearReceived: "Sep 2024",
         yearExpires: "2027",
         logo: aws_logo
+    },
+    {
+        name: "Google Cloud Certified Professional Cloud Developer",
+        organization: "Google Cloud",
+        yearReceived: "Nov 2025",
+        yearExpires: "2027",
+        logo: gcp_logo
+    },
+    {
+        name: "Google Cloud Certified Professional Cloud Architect",
+        organization: "Google Cloud",
+        yearReceived: "Nov 2025",
+        yearExpires: "2027",
+        logo: gcp_logo
+    },
+    {
+        name: "Microsoft Azure Data Scientist Associate",
+        organization: "Microsoft Azure",
+        yearReceived: "May 2025",
+        yearExpires: "2026",
+        logo: ms_azure_logo
     },
     {
         name: "AWS Certified Cloud Practitioner",
