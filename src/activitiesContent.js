@@ -1,9 +1,11 @@
 import rtc_logo from "./images/rtc_outline.png";
 import codepath_logo from "./images/codepath_logo.png";
 import stem_for_her from "./images/stem_for_her.png";
+import coding_it_forward from "./images/cif_logo.png";
 import bridges_to_independence from "./images/bridges_to_independence.png";
 import miriams_kitchen from "./images/miriams_kitchen.png";
 import afac from "./images/afac.png";
+import ctl from "./images/ctl_logo.png";
 
 export const mentoring = [
     {
@@ -45,6 +47,18 @@ export const mentoring = [
         logo: stem_for_her
     },
     {
+        jobTitle: "Coding it Forward",
+        companyName: "https://codingitforward.com/",
+        location: "",
+        startDate: "Jun 2025",
+        endDate: "Present",
+        skills: [],
+        tasks: [
+            "Mentor female student interested in pursuing technical degree by meeting on biweekly basis to provide advice and resources on various topics, including career paths and training"
+        ],
+        logo: coding_it_forward
+    },
+    {
         jobTitle: "Bridges to Independence",
         companyName: "https://bridges2.org/",
         location: "",
@@ -82,5 +96,17 @@ export const volunteering = [
             "Enable low-income families in Arlington, VA to receive substantial, nutritious meals on weekly basis by sorting and distributing 100 lbs of donated food items per month",
         ],
         logo: afac
+    },
+    {
+        jobTitle: "Crisis Text Line (CTL)",
+        companyName: "https://www.crisistextline.org/",
+        location: "",
+        startDate: "Sep 2025",
+        endDate: "Present",
+        skills: [],
+        tasks: [
+            "Volunteer as crisis counselor to provide free, 24/7 support for people in crisis by texting with individuals to help them move from a hot moment to a cool moment through active listening and collaborative problem solving",
+        ],
+        logo: ctl
     },
 ]
